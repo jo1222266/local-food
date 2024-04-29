@@ -1,0 +1,21 @@
+server:
+  port: 9090
+  
+spring:
+  application:
+    name: BookShop
+
+  datasource:
+    driver-class-name: oracle.jdbc.OracleDriver
+    url: jdbc.oracle:this:@localhost:1521:xe
+    username: madang
+    password: madang
+
+  mvc:
+    view:
+      prefix: /WEB-INF/views/
+      suffix: .jsp
+      
+mybatis:
+  mapper-locations: mybatis/*.xml
+  type-aliases-package: kr.ac.kopo.bookshop.Model
