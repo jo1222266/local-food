@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<div>
+		<div>
+			<h1>BookShop 2024</h1>
+		</div>
+		
+		<div th:if = "${member == null}">
+			<div><a href="/login">로그인</a></div>
+		</div>
+		
+		<div th:if = "${member != null}">
+			<div><a href="/logout">로그아웃</a></div>
+		</div>
+		
+		<div>
+			<div><a href="book/list">도서관리</a></div>
+			<div><a href="customer/list">고객관리</a></div>
+			<div><a href="orders/list">주문관리</a></div>
+		</div>
+	</div>
+</body>
+</html>
