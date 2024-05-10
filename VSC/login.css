@@ -1,0 +1,92 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    
+  } 
+
+  a {
+   color: inherit; /* 링크가 방문되었을 때의 색상을 부모 요소의 색상으로 상속 */
+   text-decoration: none;
+  }
+
+  .body {
+   width: 100%;
+   height: 1000px;
+   background-image: url(/img/login-back-img.png);
+   background-size: cover; /* 이미지가 컨테이너에 꽉 차도록 설정 */
+   background-repeat: no-repeat; /* 이미지 반복 없음 */
+   background-attachment: fixed; /* 배경 이미지 고정 */
+   overflow-x: hidden; /* 가로 스크롤바 숨기기 */
+   
+         
+  }
+
+  
+  .login {
+   width: 600px;
+   height: 750px;
+   background-color: white;
+   text-align: center;
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   margin-top: 100px;
+   border: 1px solid rgb(194, 194, 194); /* 시간되면 색깔 수정 */
+  }
+
+  .form-style {
+  width: 512px;
+  height: 65px;
+  color: black;
+  background-color:  #F5F5F5;
+  font-size: 20px;
+  line-height: 22px;
+  letter-spacing: 0.5px;
+  font-weight: 700;
+  border: solid 0.5px #8b8b8b;
+  border-radius: 5px;
+  text-indent: 30px;
+
+ 
+}
+
+#login_btn {
+width: 515px;
+height: 65px;
+font-size: 25px;
+background-color: #7dc4f8;
+margin-top: 30px;
+border: 0.5px solid white;
+color: #ffffff;
+font-weight: bold;
+}
+
+#find_wrap {
+display: flex;
+margin-left: 143px;
+margin-top: 20px;
+}
+
+#find_wrap li {
+padding-left: 8px;
+}
+
+
+
+/* 체크박스 컨테이너에 대한 스타일 */
+.checkbox-container {
+display: inline-block;
+vertical-align: middle; /* 텍스트와의 수직 정렬을 위해 */
+}
+
+.checkbox-container input[type=checkbox] {
+transform: scale(1.5); /* 체크박스 크기를 키웁니다. */
+margin-right: 10px; /* 텍스트와의 간격을 조절합니다. */
+}
+
+/* 텍스트에 대한 스타일 */
+.checkbox-container label {
+vertical-align: middle; /* 텍스트와의 수직 정렬을 위해 */
+}

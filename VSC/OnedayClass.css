@@ -1,0 +1,123 @@
+.profile_pic {
+    width: 230px;
+    height: 230px;
+    background-image: url(/img/profile-img.png); /* 이미지 경로가 올바른지 확인하세요 */
+    background-size: cover; /* 이미지가 div에 맞게 늘어나도록 설정합니다 */
+    border-radius: 50%; /* 이 부분이 동그란 모양을 만드는 중요한 부분입니다 */
+    overflow: hidden; /* 주어진 크기를 벗어나는 부분을 숨기기 위해 필요합니다 */
+    margin-left: 130px;
+    margin-top: 70px;
+}
+
+#profile_sec{
+   width: 480px;
+   height: 1320px;
+   border-right: 1px solid black;
+   text-align: center;
+   margin-left: 30px;
+}
+
+.side_menu_1 {   
+   width: 234px;
+   height: 65px;
+   border: 1px solid #969696;
+   font-size: 20px;
+   margin-left: 125px;
+   align-items: center;
+   
+}
+
+.side_menu_2 {   
+   width: 234px;
+   height: 65px;
+   border: 1px solid #969696;
+   font-size: 20px;
+   margin-left: 125px;
+   align-items: center;     
+   background-color: #F8FACD;
+}
+
+
+.menu_p {
+  margin-top: 18px;
+}
+
+.container {
+display: flex; /* Flexbox를 사용하여 자식 요소들을 가로로 나란히 배치합니다. */
+}
+
+.img_name {
+    font-size: 24px;
+    margin-top: 20px;
+}
+
+.img_dif {
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+.add_btn {
+    width: 121px;
+    height: 46px;
+    margin-top: 70px;
+    border-radius: 20px;
+    background-color: #8BAb8E;
+    border: 0;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.class_sec {
+    width: 1116px;
+    height: 289px;
+    display: flex;
+    margin-top: 40px;
+}
+
+.classes {
+    margin-left: 100px;
+}
+
+
+
+.class_desc_sec {
+    margin-left: 25px;
+
+}
+
+.class_desc {
+   width: 520px;
+   margin-top: 24px;
+   font-size: 18px;
+}
+
+.class_info {
+    display: flex;
+    margin-top: 15px;
+}
+
+.class_title {
+    font-size: 32px;
+    font-weight: 500;
+}
+
+.class_price {
+    display: flex;
+    margin-top: 55px;
+
+}
+
+.page_btn {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    margin-left: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9b9b9b;
+    font-size: 20px;
+ }
+

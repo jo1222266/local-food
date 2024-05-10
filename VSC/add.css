@@ -1,0 +1,233 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    
+  } 
+
+  a {
+   color: inherit; /* 링크가 방문되었을 때의 색상을 부모 요소의 색상으로 상속 */
+   text-decoration: none;
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+    
+  
+  }
+
+  .logo {
+    padding-left: 160px;
+    font-size: 32px;
+    margin-top: 20px;
+ }
+
+ 
+ .menus {
+    padding-right: 150px;
+    font-size: 20px;
+ }
+
+ .header ul li {
+    display: inline-block;
+    padding-left: 40px;
+    text-align: center;
+    padding: 50px;
+   }
+
+   #menu_btn {
+    width: 168px;
+    height: 53px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    font-size: 20px;
+    border: solid 0.1px white;
+    
+    }
+
+    .container {
+      display: flex;
+    }
+
+
+  .profile_pic{
+    width: 110px; /* 원의 지름을 결정합니다 */
+  height: 110px; /* 원의 지름을 결정합니다 */
+  border-radius: 50%; /* 50%로 설정하여 동그란 모양이 되도록 합니다 */
+
+  overflow: hidden; /* 내부 이미지를 원 모양에 맞추기 위해 필요합니다 */
+  margin-left: 190px;
+  margin-top: 70px;
+  }
+
+  .profile_pic img {
+    width: 100%; /* 부모 요소의 너비에 맞추어 이미지 크기를 조정합니다 */
+  height: auto; /* 이미지 비율 유지 */
+  }
+  
+  #profile_sec{
+     width: 420px;
+     height: 1320px;
+     margin-left: 200px;
+  }
+
+  .short_cut {
+    margin-bottom: 10px;
+  } 
+
+  
+
+  .navbar1 {
+    width: 165px; 
+    height: 20px; 
+    background-color: #f5f5f5; 
+    margin-left: 145px;
+    padding: 20px;
+  }
+  
+    .navbar2 {
+      width: 165px; 
+      height: 95px; 
+      background-color: #f5f5f5; 
+      margin-left: 145px;
+      padding: 20px;
+    }
+  
+    .navbar3 {
+      width: 165px; 
+      height: 60px; 
+      background-color: #f5f5f5; 
+      margin-left: 145px;
+      padding: 20px;
+    }
+  
+  
+    .navbar2 p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    .navbar3 p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+  
+    .profile_title {
+     font-size: 20px; 
+     margin-top: 10px; 
+     width: 150px; 
+     text-align: center;
+    }
+
+    .profile_detail {
+      margin-top: 5px; 
+      margin-bottom: 30px;
+    }
+
+    #title {
+      font-size: 25px;
+      font-weight: bold;
+      margin-top: 75px;
+      padding: 15px;
+    }
+
+    .section_1 {
+      display: flex;
+      width: 923px;
+      height: 790px;
+      border: 1px solid #c3c3c3;
+      border-radius: 20px;
+      margin-top: 20px;
+    }
+
+    .section_1_img {
+      width: 230px;
+      height: 230px; 
+      background-color: #d9d9d9;
+      margin: 35px;
+    }
+
+    .section_1_p {
+      font-size: 17px;
+      font-weight: 600;
+    }
+
+    
+
+    .input_box_1 {
+      margin-top: 10px;
+      width: 500px;
+      height: 40px;
+      background-color: #f9f9f9;
+      border: 0.5px solid #e4e4e4;
+      border-radius: 5px;
+    }
+
+    .input_box_2 {
+      margin-top: 10px;
+      width: 500px;
+      height: 115px;
+      background-color: #f9f9f9;
+      border: 0.5px solid #e4e4e4;
+      border-radius: 5px;
+    }
+
+    .input_box_3 {
+      margin-top: 20px;
+      width: 85px;
+      height: 40px;
+      background-color: #f9f9f9;
+      border: 0.5px solid #e4e4e4;
+      border-radius: 5px;
+      font-size: 16px
+    }
+
+    .input_box_4 {
+      margin-top: 20px;
+      width: 125px;
+      height: 40px;
+      background-color: #f9f9f9;
+      border: 0.5px solid #e4e4e4;
+      border-radius: 5px;
+      margin-left: 15px;
+    }
+
+    /* placeholder에 스타일 적용 */
+    input::placeholder {
+      color: #b2b2b2; /* placeholder 텍스트 색상 */
+      font-size: 16px; /* placeholder 폰트 크기 */
+      /* font-style: italic; placeholder 폰트 스타일 */
+      padding-left: 15px;
+    }
+
+    input[type="checkbox"] {
+      width: 18px;
+      height: 18px;
+      border: 0;
+    } 
+    
+    .select_option {
+      margin-top: 20px;
+      width: 125px;
+      height: 40px;
+      background-color: #f9f9f9;
+      border: 0.5px solid #e4e4e4;
+      border-radius: 5px;
+      
+      font-size: 16px;
+      font-weight: bold;
+    }
+
+    .check_label {
+      margin-left: 26px;
+    }
+
+    

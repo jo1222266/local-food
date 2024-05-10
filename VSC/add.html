@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="add.css">
+</head>
+<body>
+    
+    <header>
+        <nav> 
+      <div class="header">
+        <div class="logo">
+            <img src="img/Logo.png" alt="" width="130px" height="130px">
+        </div>
+        <div class="menus">
+            <ul>
+               <li><span><a href="#"><img src="img/heart.png" alt=""></a></span></li>
+               <li><button id="menu_btn"><a href="login.html">로그인</a></button> </li>
+            </ul>
+    
+        </div>
+      </nav>
+    </header>
+
+    <div class="container">
+    <section>
+        <div>
+       <div id="profile_sec">
+           <div class="profile_pic">
+              <img src="img/profile-img.png" alt="">
+          </div>
+   
+         
+          <div style="margin-left: 170px; ">
+          <p class="profile_title">요리마스터</p>
+          <p class="profile_detail">요리 마스터입니다~</p>
+          
+          </div>
+          
+          <div>
+           <div class="navbar1">
+              <a href="Recipe_v2.html" style="font-size: 18px; font-weight: bold;">레시피</a><br>
+           </div>
+   
+           <div style="height: 5px;"></div>
+   
+           <div class="navbar2">
+            <p>원데이 클래스</p>
+            <div style="height: 20px;"></div>
+            <a href="">예약현황 확인</a><br>
+            <div style="height: 10px;"></div>
+            <a href="">후기보기</a><br>
+         </div>
+   
+         <div style="height: 5px;"></div>
+   
+         <div class="navbar3">
+          <p>내 정보</p>
+          <div style="height: 10px;"></div>
+          <a href="">프로필 수정</a><br>
+       </div>
+   
+         </div>
+   
+        </div>
+       </section>
+
+       <section>
+          <p id="title">레시피 등록</p>
+
+          <div class="section_1">
+            <div class="section_1_img">
+                <img src="img/" alt="요리사진" width="230px" height="230px">
+            </div>
+
+            <div style="padding: 30px;">
+                <p class="section_1_p">레시피 제목</p>
+                <input class="input_box_1" type="text" name="title">
+
+                <div style="height: 15px;"></div>
+
+                <p class="section_1_p">레시피 소개</p>
+                
+                <input class="input_box_2" type="text" name="detail">
+
+                <div style="height: 30px;"></div>
+
+                <p class="section_1_p">요리정보</p>
+                <input class="input_box_3" type="number" name="" placeholder="인원">
+                <input class="input_box_4" type="number" name="" placeholder="소요시간">
+
+                <select class="select_option" name="difficulty" style="margin-left: 15px;">
+
+                    <option style="display: none;">난이도</option>
+                    <option value="easy">상</option>
+                    <option value="medium">중</option>
+                    <option value="hard">하</option>
+
+                </select>
+
+                <div style="height: 30px;"></div>
+                
+                <p class="section_1_p">카테고리</p>
+
+                <select class="select_option" name="local">
+
+                    <option style="display: none;">지역</option>
+                    <option value="hard">경기도</option>
+                    <option value="easy">경상남도</option>
+                    <option value="easy">경상북도</option>
+                    <option value="easy">전라남도</option>
+                    <option value="easy">전라북도</option>
+                    <option value="medium">충청남도</option>
+                    <option value="hard">충청북도</option>
+                    <option value="hard">강원도</option>  
+
+                </select> 
+
+                <select class="select_option" name="difficulty" style="margin-left: 15px;">
+
+                    <option style="display: none;">음식종류</option>
+                    <option value="easy">한식</option>
+                    <option value="medium">양식</option>
+                    <option value="hard">중식</option>
+                    <option value="hard">일식</option>
+                    <option value="hard">디저트</option>
+
+                </select>
+
+                <div style="height: 25px;"></div>
+
+                
+                <p class="section_1_p">주재료</p>
+
+                <div style="padding: 10px; font-size: 18px;">
+                <input type="checkbox"> <label >고기</label>
+                <input type="checkbox" class="check_label"> <label >해산물</label>
+                <input type="checkbox" class="check_label"> <label >채소</label>
+                <input type="checkbox" class="check_label"> <label >곡물</label>
+                <input type="checkbox" class="check_label"> <label >면</label>
+                </div>
+
+                <div style="height: 17px;"></div>
+                
+                <p class="section_1_p">조리방법</p>
+                
+                <div style="padding: 10px; font-size: 18px;">
+                <input type="checkbox"> <label >볶음</label>
+                <input type="checkbox" class="check_label"> <label >조림</label>
+                <input type="checkbox" class="check_label"> <label >튀김</label>
+                <input type="checkbox" class="check_label"> <label >굽기</label>
+                <input type="checkbox" class="check_label"> <label >끓이기</label>
+                </div>
+
+
+                
+                
+                
+            </div>
+
+          </div>
+
+          <div class="section_2">
+
+
+          </div>
+
+          <div class="section_3">
+
+
+          </div>
+          
+       </section>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,100 @@
+    .table1 {
+        width: 80%;
+        border-top: 1px solid #939393;
+        border-collapse: collapse;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    .table2 {
+        width: 80%;
+        border-top: 1px solid #939393;
+        border-collapse: collapse;
+        margin: auto;
+        margin-top: 80px;
+    }
+
+    th,
+    td {
+        border-bottom: 1px solid #444444;
+        padding: 10px;
+        text-align: center;
+    }
+
+    .square {
+        width: 450px;
+        height: 450px;
+        background-color: gray;
+        margin-top: 45px;
+        margin-left: 300px;
+        float: left;
+    }
+
+    .square1 {
+        width: 700px;
+        height: 450px;
+        background-color: gray;
+        margin-top: 50px;
+        margin-left: 1000px;
+    }
+
+    #margin {
+        padding-top: 72px;
+    }
+
+    #tag {
+        float: left;
+        margin-right: 49px;
+        margin-left: 103px;
+
+    }
+
+    #tag1 {
+        float: left;
+        margin-right: 49px;
+
+    }
+
+    #tag2 {}
+
+    #title {
+        font-size: 20px;
+        display: flex;
+        padding-left: 86px;
+        padding-top: 24px;
+    }
+
+    #time {
+        display: flex;
+        padding-left: 86px;
+        padding-top: 32px;
+    }
+
+    #people {
+        display: flex;
+        padding-left: 86px;
+        padding-top: 20px;
+    }
+
+    #level {
+        display: flex;
+        padding-left: 86px;
+        padding-top: 20px;
+    }
+
+    #stars {
+        display: flex;
+        padding-left: 86px;
+        padding-top: 36px;
+    }
+
+    #myform div{
+        font-size: 30px;
+        color: transparent;
+        text-shadow: 0 0 0 #FFC700;
+        display: flex;
+    }
+
+    #star1 {
+        float: left;
+    }
