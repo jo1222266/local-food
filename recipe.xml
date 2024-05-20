@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="recipe">
+	
+
+	<select id="list" resultType="Recipe">
+		SELECT * FROM recipe
+		
+	</select>
+	
+	<select id="item" resultType="Recipe">
+		SELECT * FROM recipe
+		WHERE roundkey=#{roundkey}
+	</select>
+	
+	<insert id="add">
+		INSERT INTO recipe (roundkey, id, subject, nickname, text, difficulty, region, foodtype, category1, category2)
+		VALUES (SEQ_ROUNDKEY.nextval, #{id}, #{subject}, #{nickname}, #{text}, #{difficulty}, 
+				#{region}, #{foodtype}, #{category1}, #{category2})
+	</insert>
+	
+	<update id="update">
+		UPDATE recipe
+		SET id=#{id}, subject=#{subject}, nickname=#{nickname}, text=#{text}, difficulty=#{difficulty},
+			region=#{region}, foodtype=#{foodtype}, category1=#{category1}, category2=#{category2}
+		WHERE roundkey=#{roundkey}
+	</update>
+	
+	<delete id="delete">
+		DELETE FROM recipe
+		WHERE roundkey=#{roundkey}
+	</delete>
+
+</mapper>

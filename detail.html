@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title></title>
+</head>
+<body>
+	<div class="container">
+		<div>
+			<form method="post">
+			
+				<div>
+					<div><label>닉네임 : </label></div>
+					  <div><p th:text="${item.nickname}"></p></div>
+				</div>
+				<div>
+					<div><label>제목 : </label></div>
+					 <div><p th:text="${item.subject}"></p></div>
+				</div>
+				<div>
+					<div><label>글 : </label></div>
+					 <div><p th:text="${item.text}"></p></div>
+				</div>
+				
+				<div>
+					<div><label> 난이도: </label></div>
+					 <div><p th:text="${item.difficulty}"></p></div>
+				</div>
+				
+				<div>
+					<div><label> 지역: </label></div>
+					 <div><p th:text="${item.region}"></p></div>
+					
+				</div>
+				<div>
+					<div><label> 음식종류: </label></div>
+					 <div><p th:text="${item.foodtype}"></p></div>
+					
+				</div>
+				
+				
+				<div>
+				    <div><label> 주재료 </label></div>
+				     <div><p th:text="${item.category1}"></p></div>
+				   
+				</div>
+				
+				<div>
+				    <div><label> 조리방법 </label></div>
+				     <div><p th:text="${item.category2}"></p></div>
+				</div>
+				
+				
+				<div>
+					<div><button><a href="../list">이전</a></button></div>
+				</div>
+			</form>
+		</div>
+	</div>
+</body>
+</html>
