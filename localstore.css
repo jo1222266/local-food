@@ -1,0 +1,186 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.visu{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: table;
+  height: 30.9em;
+  background-image: url(img/login-back-img.png);
+  color: #fff;
+}
+
+.wrapper{
+  margin: 0 auto;
+  width: 97%;
+  max-width: 1200px;
+  line-height: 50px;
+  position: relative;
+}
+.sub_tit{
+  font-size: 2.5em;
+  font-weight: 500;
+  text-align: center;
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.wrapper h3 {
+  top: 200px;
+  position: relative;
+}
+
+.wrapper .big{
+  font-size: 36px;
+}
+
+form{
+  display: block;
+  unicode-bidi: isolate;
+}
+
+input{
+  height: 50px;
+  margin: 0;
+  vertical-align: middle;
+  border: solid 1px #717171;
+  background-color: #fff;
+  box-sizing: border-box;
+
+}
+
+.store_search_bx{
+  background-color: #FFD875;
+  padding: 2em 1em;
+  overflow: hidden;
+  margin-top: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.store_search_bx .in_bx{
+  flex: 1 auto; /* 너비를 자동으로 설정하도록 변경 */
+  max-width: 250px; /* 최대 너비 설정 */
+  position: relative;
+}
+
+.store_search_bx .in_bx .tt{
+  position: absolute;
+  left: 30px;
+  top: 55%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  font-weight: 900;
+}
+
+#city{
+  width: 250px; 
+}
+#county{
+  width:150px;
+}
+#find_word{
+  width:300px;
+}
+
+
+.store_search_bx .in_bx select{
+  font-size: 16px;
+  font-weight: 300;
+  color: #666;
+  height: 50px;
+  background-color: #fff;
+}
+
+
+option{
+  font-weight: normal;
+  display: block;
+  min-height: 1.2em;
+  padding: 0px 2px 1px;
+  white-space: nowrap;
+}
+
+
+.store_search_bx .in_bx .search_inp{
+  position: relative;
+}
+
+
+
+.store_search_bx .in_bx .search_inp .search_btn{
+  font-size: 0;
+  position: absolute;
+  right: 0;
+  width: 36px;
+  border: 0;
+  background: url(img/search.png) no-repeat center;
+}
+
+
+
+
+
+/* card */
+.card-container{
+  position: relative;
+  margin-top: 2000px;
+}
+
+.card-main{
+  
+  display: flex;
+  justify-content: center;
+  box-sizing: border-box;
+  
+}
+
+.card {
+  width: 300px;
+  background-color: #F1F1F1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.2);
+  margin: 0 30px 20px 0;
+  margin-bottom: 20px;
+}
+
+.card img{
+  width: 100%;
+  height: auto;
+}
+
+.card-content{
+  padding: 16px;
+}
+
+.card-content h3{
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.card-content p{
+  color: #666;
+  font-size: 15px;
+  line-height: 1.3;
+}
+
+.card-content .btn{
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #A0A0A0;
+  text-decoration: none;
+  border-radius:30px;
+  margin-top: 16px;
+  color: #fff;
+}
+
+.card-content .btn:hover{
+  background-color: white;
+  color: #A0A0A0;
+}

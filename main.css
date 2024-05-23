@@ -1,0 +1,550 @@
+body {
+  width: 100%;
+  height:auto;
+  margin: 0 auto; /* 가운데 정렬을 위한 margin 설정 */
+  justify-content:center;
+  position: relative;
+}
+
+
+
+
+/* top swiper */
+.top{ 
+  height: 900px;
+  position: relative;
+}
+.top img{
+  width: 100%;
+  height: 870px;
+}
+.top .swiper {
+  width: 100%;
+}
+
+.top .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* btn1 버튼 기본 설정  */
+/* 추가적인건 id선택자로 추가 */
+.btn1{
+ bottom: 200px; 
+ left: 200px;
+ position: fixed;
+
+ 
+}
+.btn1 button{ 
+  border-radius: 50px;
+  border: none;
+  width: 155px;
+  height: 50px;
+
+  font-size: 16px;
+  font-weight: bold;
+
+}
+
+
+#btn1-1 button{
+  border-radius: 10px;
+  border: none;
+  width: 240px;
+  height: 70px;
+
+  font-size: 20px;
+  font-weight: bold;
+  background: rgba(210, 231, 213, 0.58);
+  border: none;
+  color: #ffffff;
+}
+#btn1-1 button:hover{
+  border: none;
+  background:#e0e0e2 ;
+  color:#12361C;
+}
+
+
+#btn1-2 button{
+  background: rgba(255, 255, 255, 0.58);
+  border: none;
+  color: black;
+}
+#btn1-2 button:hover{
+  border: 1px solid rgb(0, 0, 0);
+  background:#191C37 ;
+  color:white;
+}
+
+
+
+/* section2 */
+.section2{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 300px;
+  padding-top: 300px;
+}
+.center2{
+  text-align: center;
+  position: relative;
+}
+.title2 h1{
+  font-size: 40px;
+  padding-bottom: 40px;
+}
+
+.img2-container {
+  font-size:45px;
+  margin-bottom:70px;
+  margin-top:40px;
+  font-family: 'Signika', sans-serif;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.img2-container img {
+ width: 300px; 
+ height: 300px; 
+ margin-bottom:100px;
+}
+
+.imgTextContainer img:hover{
+  opacity: 20%;
+}
+
+.imgTextContainer {
+  position: relative;
+  width: 300px; 
+  margin-left: 42px;
+}
+
+.imageText1 {
+  font-size: 35px;
+  position: absolute;
+  top: 15%; 
+  left: 30%; 
+  transform: translate(-50%, -50%);
+  opacity: 0; /* 초기에는 텍스트를 숨김 */
+  transition: opacity 0.2s ease; 
+}
+.imageText2 {
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 30%; 
+  left: 30%; 
+  transform: translate(-50%, -50%);
+  opacity: 0; /* 초기에는 텍스트를 숨김 */
+  transition: opacity 0.2s ease; 
+}
+
+.imageText3 {
+  font-size: 20px;
+  font-weight: 600;
+  position: absolute;
+  top: 40%; 
+  left: 30%; 
+  transform: translate(-50%, -50%);
+  opacity: 0; /* 초기에는 텍스트를 숨김 */
+  transition: opacity 0.2s ease; 
+}
+
+
+.imgTextContainer:hover .imageText1{
+  opacity: 1;
+}
+.imgTextContainer:hover .imageText2{
+  opacity: 1;
+}
+.imgTextContainer:hover .imageText3{
+  opacity: 1;
+}
+
+
+
+
+
+/* section3 */
+.section3{
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  background-color: #F5F5F5;
+}
+
+.center3{
+  text-align: center;
+  margin-top: 200px;
+  width: 1330px;
+}
+
+.title3 h1{
+   font-weight: bolder;
+   font-size: 35px;
+   text-align: left;
+   margin-right: 10px;
+   letter-spacing: -2px;
+}
+/* .tiitle3Hr{
+  border: 1px solid #000000;
+  background-color: black;
+  width: 300px;
+} */
+
+.rank-container {
+  margin-bottom:70px;
+  margin-top:40px;
+  display: flex;
+  justify-content: center;
+}
+
+
+.profile-container{
+  align-items: center;
+  width: 220px;
+  height: 310px;
+  padding: 0px 10px;
+  position: relative;
+  border: none;
+  border-radius: 20px;
+  background-color: white;
+  margin: 0px 15px;
+
+}
+
+.profile-container h1{
+   font-weight: 900;
+   font-size: 18px;
+   text-align: center;
+}
+.profile-container p{
+   font-weight: 500;
+   font-size: 14px;
+   text-align: center;
+   padding-top: 10px;
+}
+.profile-img{
+  padding-top: 30px;
+  padding-bottom: 15px;
+}
+.profile-img img{
+  width: 130px; 
+  height: 130px; 
+}
+
+.profile-img img:hover{
+  border: 2px black ;
+}
+
+.rank-img{
+  position: absolute;
+  top: 15px;
+  left: 25px;
+}
+.rank-img img{
+  width:70px;
+  height:70px;
+}
+
+/* section4 */
+.section4{
+  display: flex;
+  justify-content: center;
+  height: 1000px;
+}
+
+.center4{
+  margin-top: 200px;
+  width: 1330px;
+}
+.oneday-container {
+  margin-bottom:70px;
+  margin-top:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ondayIntro-container{
+  margin-left: 10px;
+  margin-right: 20px;
+  bottom: 10px;
+  position: relative;
+}
+.title4 h1{
+  font-weight: 600;
+  font-size: 40px;
+}
+.btn4{
+  padding-top: 50px;
+  padding-left: 100px;
+ }
+.btn4 button{
+   border: 1px solid rgb(107, 107, 107);
+   background: rgba(255, 255, 255, 0.58);
+   
+   width: 250px;
+   height: 60px;
+ 
+   color: rgb(68, 68, 68);
+   font-size: 17px;
+   font-weight: bold;
+}
+
+.btn4 button:hover{
+  border: 1px solid rgb(0, 0, 0);
+  background: rgba(250, 252, 236, 0.58);
+  
+  width: 250px;
+  height: 60px;
+
+  color: black;
+  font-size: 17px;
+  font-weight: bold;
+}
+.onedayImg-container{
+  margin: 20px;
+}
+.onedayIntro1{
+  padding-top: 50px;
+}
+.onedayIntro1 p{
+  font-size: 18px;
+  padding-bottom: 30px;
+  letter-spacing: 1px;
+  line-height: 35px;
+}
+.onedayIntro2{
+  padding-top: 30px;
+}
+.onedayIntro2 p{
+  font-size: 20px;
+  padding-bottom: 20px;
+  font-weight: 600;
+}
+.oneday-container img{
+  width: 600px;
+  height: 540px;
+}
+
+
+/* section7 */
+
+.top{ 
+  height: 900px;
+  position: relative;
+  justify-content: center;
+}
+.top img{
+  width: 100%;
+  height: 870px;
+}
+.top .swiper {
+  width: 100%;
+}
+
+.top .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.top .swiper-slide img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.section7{
+  display: flex;
+  justify-content: center;
+  height: 700px;
+}
+
+.center7{
+  margin-top: 200px;
+  width: 1330px;
+}
+.review-container {
+  margin-bottom:70px;
+  margin-top:40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.onedayFoodImg-container{
+  margin: 0px 20px;
+}
+.onedayFoodImg-container img{
+  width: 310px ;
+  height: 310px;
+}
+ 
+
+
+/* section5 */
+.section5{
+  display: flex;
+  justify-content: center;
+  height: 600px;
+}
+
+.center5{
+  margin-top: 100px;
+}
+.local-container {
+  width: 1500px;
+  height: 410px;
+  border: 2px solid black;
+  border-radius: 20px;
+  background-color: #191C37;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.localStore{
+  margin-left: 10px;
+  margin-right: 20px;
+  bottom: 50px;
+  position: relative;
+  justify-content: center;
+  flex: 1;
+  left: 100px;
+  bottom:20px;
+}
+.localStore h1{
+  color: white;
+  font-size: 35px;
+  padding-bottom: 40px;
+
+}
+.btn5{
+  padding-top: 50px;
+
+ }
+.btn5 button{
+  border: none;
+  border-radius: 10px;
+  background:#30324B;
+  background-color: 10% ;
+   
+  width: 240px;
+  height: 60px;
+ 
+  color: #c2bcbc;
+  font-size: 20px;
+}
+.btn5 button:hover{
+  border: none;
+  border-radius: 10px;
+  background:#b3b4be;
+  background-color: 10% ;
+   
+  width: 240px;
+  height: 60px;
+ 
+  color: #ffffff;
+  font-size: 20px;
+}
+
+.localImg{
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+
+}
+
+.localImgFood img{
+  width: 1200px;
+  height:auto;
+}
+
+
+
+/* section6 */
+.section6{
+  justify-content: center;
+  height: 1000px;
+}
+
+.center6{
+  margin-top: 200px;
+}
+.chatbot-container {
+  width: auto;
+  height: 700px;
+  border: none;
+  background-color: #FBFACD;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.chatImg img{
+  width:550px;
+  height:450px;
+}
+.chatbotIntro{
+  padding-left: 150px;
+  margin-bottom: 80px;
+  
+}
+.chatbotIntro h1{
+  color: rgb(0, 0, 0);
+  font-size: 40px;
+  padding-bottom: 30px;
+}
+.chatbotIntro p{
+  font-size: 20px;
+}
+.chatbotIntro1 p{
+  font-weight: 600;
+}
+.btn6{
+  padding-top: 80px;
+
+ }
+.btn6 button{
+  border: none;
+  border-radius: 10px;
+  background:#6a7754;
+  background-color: 10% ;
+   
+  width: 240px;
+  height: 60px;
+ 
+  color: #ffffff;
+  font-size: 20px;
+}
+.btn6 button:hover{
+  border: none;
+  border-radius: 10px;
+  background:#6a7754;
+  opacity: 80%;
+  background-color: 10% ;
+   
+  width: 240px;
+  height: 60px;
+ 
+  color: #000000;
+  font-size: 20px;
+}

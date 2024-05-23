@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="footer.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  
+</head>
+
+
+<body>
+
+    <header>
+        <nav> 
+      <div class="header">
+        <div class="logo">
+            <img src="img/logo1.png">
+        </div>
+        <div class="menus">
+            <ul>
+               <li><span><a href="#">농산물</a></span></li>
+               <li><span><a href="#">클래스</a></span></li>
+               <li><span><a href="#">레시피</a></span></li>
+               <li><span><a href="#">AI</a></span></li>
+               <li><span><a href="#"><img src="img/like.png"></a></span></li>
+               <li><button id="menu_btn"><a href="#">로그인</a></button> </li>
+               <!-- <li><span><a href="#"><img src="img/mainProfile.png"></a></span></li> -->
+
+            </ul>
+    
+        </div>
+      </nav>
+    </header>
+
+    <div class="top">
+        <div class="swiper mySwiper" pagination="true" pagination-dynamic-bullets="true">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"> 
+                    <img src="img/slide1.png">
+                    <div class="btn1" id="btn1-1">
+                        <button type="button"><a href="#">레시피 보러가기</a></button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"> 
+                    <img src="img/slide2.png">
+                    <div class="btn1" id="btn1-2">
+                        <button type="button"><a href="#">More</a></button>
+                    </div>
+                </div>
+
+                <div class="swiper-slide"> 
+                    <img src="img/slide1.png">
+                    <div class="btn1" id="btn1-3">
+                        <button type="button"><a href="#">More</a></button>
+                    </div>
+                </div>
+           </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+           
+        </div>
+    </div>
+    
+    <div class="section2">
+        <div class="center2">
+            <div class="title2">
+                <h1>추천 레시피</h1>
+            </div>
+           <div class="img2-container">
+            
+            <div class="imgTextContainer" onclick="toggleImageText('imageText1')">
+                <div class="img1"><a href="#"><img src="img/food.png"></a></div>
+                <h1 class="imageText1">떡볶이</h1>
+                <p class="imageText2">15~20분</p>
+                <p class="imageText3">단계:쉬움</p>
+                
+
+            </div>
+            
+            <div class="imgTextContainer" onclick="toggleImageText('imageText2')">
+                <div class="img2"><a href="#"><img src="img/food.png"></a></div>
+                <h1 class="imageText1">비빔밥</h1>
+                <p class="imageText2">10~15분</p>
+                <p class="imageText3">단계:어려움</p>
+            </div>
+            
+            <div class="imgTextContainer" onclick="toggleImageText('imageText3')">
+                <div class="img3"><a href="#"><img src="img/food.png"></a></div>
+                <h1 class="imageText1">된장찌개</h1>
+                <p class="imageText2">15~20분</p>
+                <p class="imageText3">단계:보통</p>
+            </div>
+            
+            <div class="imgTextContainer" onclick="toggleImageText('imageText4')">
+                <div class="img4"><a href="#"><img src="img/food.png"></a></div>
+                <h1 class="imageText1">불고기</h1>
+                <p class="imageText2">35~40분</p>
+                <p class="imageText3">단계:어려움</p>
+            </div>
+
+           </div>
+        </div>
+    </div>
+
+    <div class="section3">
+        <div class="center3">
+            <div class="title3">
+                <h1>이달의 쉐프</h1>
+                <!-- <div class="title3Hr"></div> -->
+            </div>
+            <hr>
+            <div class="rank-container">
+                
+                <div class="profile-container">
+                    <a href="#">
+                        <div class="rank-img">
+                            <img src="img/rank1.png">
+                        </div>
+                        <div class="profile-img">
+                            <img src="img/profile-img1.png">
+                        </div>
+                        <h1 class="profileName">요리조리</h1>
+                        <p>
+                            한식 레시피 전문가
+                        </p>
+                    </a>
+                </div>
+                <div class="profile-container">
+                    <a href="#">
+                        <div class="rank-img">
+                            <img src="img/rank2.png">
+                        </div>
+                        <div class="profile-img">
+                            <img src="img/profile-img1.png">
+                        </div>
+                        <h1 class="profileName">요리조리</h1>
+                        <p>
+                            한식 레시피 전문가
+                        </p>
+                    </a>
+                </div>
+                <div class="profile-container">
+                    <a href="#">
+                        <div class="rank-img">
+                            <img src="img/rank3.png">
+                        </div>
+                        <div class="profile-img">
+                            <img src="img/profile-img1.png">
+                        </div>
+                        <h1 class="profileName">요리조리</h1>
+                        <p>
+                            한식 레시피 전문가
+                        </p>
+                    </a>
+                </div>
+                <div class="profile-container">
+                    <a href="#">
+                        <div class="profile-img">
+                            <img src="img/profile-img1.png">
+                        </div>
+                        <h1 class="profileName">요리조리</h1>
+                        <p>
+                            한식 레시피 전문가
+                        </p>
+                    </a>
+                </div>
+                <div class="profile-container">
+                    <a href="#">
+                        <div class="profile-img">
+                            <img src="img/profile-img1.png">
+                        </div>
+                        <h1 class="profileName">요리조리</h1>
+                        <p>
+                            한식 레시피 전문가
+                        </p>
+                    </a>
+                </div>
+               
+              
+  
+            </div>
+        </div>
+    </div>
+    
+    
+    
+    <div class="section4">
+        <div class="center4">
+            
+            <div class="oneday-container">
+                <div class="ondayIntro-container">
+
+                    <div class="title4">
+                        <h1>원데이 클래스</h1>
+                    </div>
+
+                    <div class="onedayIntro1">
+                        <p> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. 
+                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+                            Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                        </p>
+                    </div>
+                    <div class="onedayIntro2">
+                        <p>수업에 참여해서 지역별 요리를 만들어보세요</p>
+                    </div>
+                    
+                    <div class="btn4">
+                        <button type="button"><a href="#">내 주변 클래스 찾기</a></button>
+                    </div>
+                </div>
+
+                <div class="onedayImg-container">
+                   <img src="img/oneday.png">  
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="section7">
+        <div class="center7">
+
+            <div class="title7">
+                <h1>원데이 클래스 후기</h1>
+            </div>
+
+            <div class="review-container">
+                <div class="onedayFoodImg-container">
+                    <img src="img/oneFood1.jpg">  
+                </div>
+                <div class="onedayFoodImg-container">
+                    <img src="img/oneFood2.jpg">  
+                </div>
+                <div class="onedayFoodImg-container">
+                    <img src="img/oneFood3.jpg">  
+                </div>
+                <div class="onedayFoodImg-container">
+                    <img src="img/oneFood4.jpg">  
+                </div>
+               
+            </div>
+        </div>
+    </div> 
+
+   
+
+   
+         
+
+    <div class="section5">
+        <div class="center5">
+            
+            <div class="local-container">
+                <div class="localStore">
+                    <h1>로컬직매장 위치</h1>
+                    <div class="btn5">
+                       <button type="button"> <a href="#">찾아보기</a></button>
+                    </div>
+                </div>
+                <div class="localImg">
+                    <div class="localImgFood" id="localImgFood1">
+                        <img src="img/localFood.png">  
+                    </div>
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section6">
+        <div class="center6">
+            
+            <div class="chatbot-container">
+                <div class="chatImg">
+                    <div class="chatImg" id="localImgFood1">
+                        <img src="img/chatbot.png">  
+                    </div>
+                </div>
+                <div class="chatbotIntro">
+                    <h1>오늘 뭘 만들지 모르겠나요?</h1>
+                    
+                    <p>AI에게 오늘의 추천 레시피를 물어보세요</p>
+                    
+                    <div class="chatbotIntro1">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> 
+                            sed do eiusmod tempor incididunt ut labore et dolore <br>magna aliqua.
+                        </p>
+                    </div>
+                    
+                    <div class="btn6">
+                        <button type="button"><a href="#">AI 추천받기</a></button>
+                    </div>
+                    
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        
+        <div class="footer">
+            <div class="footer-container">
+                <div class="logo">
+                    <img src="img/logo.png">
+                </div>
+            </div>
+          
+        </div>
+    </footer>
+
+
+
+
+
+<script>
+        function toggleImageText(textId) {
+    var text = document.getElementById(textId);
+    // 이미지를 클릭하면 글자의 불투명도를 0에서 1로 변경하여 나타냄
+    text.style.opacity = (text.style.opacity === "0" || text.style.opacity === "") ? "1" : "0";
+    }
+
+    var imgTextContainers = document.querySelectorAll(".imgTextContainer");
+
+    imgTextContainers.forEach(function(container) {
+    var img = container.querySelector("img");
+    var text = container.querySelector(".imageText");
+    
+    container.addEventListener("mouseenter", function() {
+        // 이미지에 마우스를 가져가면 텍스트가 나타남
+        text.style.opacity = "1";
+    });
+    
+    container.addEventListener("mouseleave", function() {
+        // 이미지에서 마우스가 벗어나면 텍스트가 사라짐
+        text.style.opacity = "0";
+    });
+    });
+</script>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+<script>
+    var swiper = new Swiper(".mySwiper2", {
+      slidesPerView: 4,
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+  
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</body>
+</html>
