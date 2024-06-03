@@ -1,0 +1,437 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+a {
+    color: inherit; /* 링크가 방문되었을 때의 색상을 부모 요소의 색상으로 상속 */
+    text-decoration: none;
+}
+
+section {
+  display: flex;
+}  
+  #profile_sec{
+     width: 160px;
+     height: 210px;
+
+     margin-top: 80px;
+     margin-left: 320px;
+  }
+
+  /*--------------------------------*/
+
+  .pic_sec {
+    display: flex;
+    justify-content: center;
+
+    width: 160px;
+    height: 110px;
+  }
+
+  .profile_pic{
+    width: 110px; /* 원의 지름을 결정합니다 */
+    height: 110px; /* 원의 지름을 결정합니다 */
+
+    border-radius: 50%; /* 50%로 설정하여 동그란 모양이 되도록 합니다 */
+
+    overflow: hidden; /* 내부 이미지를 원 모양에 맞추기 위해 필요합니다 */
+  }
+
+  .profile_pic img {
+    width: 100%; /* 부모 요소의 너비에 맞추어 이미지 크기를 조정합니다 */
+    height: auto; /* 이미지 비율 유지 */
+  }
+
+  /*---------------내비 타이틀-------------------*/
+
+  .nav_title {
+    width: 160px;
+  }
+
+  .profile_title {
+    width: 160px; 
+
+    font-size: 17px;
+    text-align: center;
+  }
+
+  .profile_detail {
+    width: 160px;
+
+    font-size: 13px;
+    text-align: center;
+
+    margin-top: 5px; 
+    margin-bottom: 50px;
+  }
+
+  /*--------------------------------------------------------------------------------*/
+
+  .nav_sec {
+    width: 160px;
+    height: 210px;
+  }
+
+  /*================레시피===============*/
+
+  .navbar1 {
+    display: flex;
+    align-items: center;
+
+    width: 160px; 
+    height: 40px; 
+    
+    background-color: #f5f5f5; 
+  }
+
+  .navbar1 a {
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-left: 10px;
+  }
+
+  /*===============원데이클래스================*/
+
+  .navbar2 {
+    display: flex;
+    align-items: center;
+
+    width: 160px; 
+    height: 40px; 
+
+    background-color: #f5f5f5; 
+  }
+  
+
+  .navbar2 p {
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-left: 10px;
+  }
+
+  /*================예약현황확인===============*/
+
+  .navbar3 {
+    display: flex;
+    align-items: center;
+
+    width: 160px; 
+    height: 40px; 
+
+    background-color: #f5f5f5; 
+  }
+
+  .navbar3 a {
+    font-size: 12px;
+
+    margin-left: 10px;
+  }
+
+  /*==============내정보=================*/
+
+  .navbar4 {
+    display: flex;
+    align-items: center;
+
+    width: 160px; 
+    height: 40px; 
+
+    background-color: #f5f5f5; 
+  } 
+  
+  .navbar4 p {
+    font-size: 13px;
+    font-weight: bold;
+
+    margin-left: 10px;
+  }
+
+  /*==============프로필수정=================*/
+
+  .navbar5 {
+    display: flex;
+    align-items: center;
+
+    width: 160px; 
+    height: 40px; 
+
+    background-color: #f5f5f5; 
+  }
+
+  .navbar5 a {
+    font-size: 13px;
+
+    margin-left: 10px;
+  }
+
+  /* 여백 부분 */
+
+  .short_cut {
+    margin-bottom: 5px;
+  }   
+
+/* ------------------------------------body 작성 부분------------------------------------------------------------- */
+
+.write {
+    width: 1020px;
+    height: auto;
+
+    border: 1px solid #828282;
+    border-radius: 30px;
+
+    margin-top: 70px;
+    margin-left: 70px;
+    margin-bottom: 200px;
+
+    padding-bottom: 200px;
+}
+
+/*----------------------------- 이미지 보이는 부분 -----------------------------------------------*/
+
+    .write_profile {
+      display: flex;
+      margin-left: 120px;
+      margin-top: 80px;
+      align-items: center;
+    }
+
+    .profile_pic2 {
+      width: 150px; /* 원의 지름을 결정합니다 */
+      height: 150px; /* 원의 지름을 결정합니다 */
+      border-radius: 50%; /* 50%로 설정하여 동그란 모양이 되도록 합니다 */
+
+      overflow: hidden; /* 내부 이미지를 원 모양에 맞추기 위해 필요합니다 */
+      
+    }
+
+    .profile_pic2 img {
+      width: 100%; /* 부모 요소의 너비에 맞추어 이미지 크기를 조정합니다 */
+      height: auto; /* 이미지 비율 유지 */
+    }
+
+/*------------------------------기본 이미지 선택-------------------------------*/
+
+    .text_1 {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #d7d7d7;
+      border-radius: 20px;
+      background-color: #f6f6f6;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: 50px;
+    }
+
+    .text_1 p {
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+    /*====================사진 불러오기======================*/
+
+    .text_2 {
+      width: 150px;
+      height: 50px;
+      border: 1px solid #d7d7d7;
+      border-radius: 20px;
+      background-color: #f6f6f6;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin-left: 80px;
+    }
+
+    .text_2 p {
+      font-size: 15px;
+      font-weight: 800;
+    }
+
+/*------------------------------------------- 작성 부분 ------------------------------------------*/
+
+.write_input {
+  margin-top: 50px;
+  margin-left: 120px;
+}
+
+/* ----------------------------닉네임, 전화번호 공통 -------------------------*/
+
+  .input_sec {
+    display: flex;
+
+    height: 60px;
+
+    padding-bottom: 35px;
+  }
+
+  .label {
+    display: flex;
+    align-items: center;
+
+    width: 140px;
+    height: 60px;
+  }
+
+  .label label {
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #828282;
+  }
+
+  .input {
+    height: 60px;
+  }
+
+  .input input {
+    width: 670px;
+    height: 60px;
+
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+
+    background-color: #f5f5f5;   
+  }
+
+/*============================================= input 속성 - placeholder ================================================= */
+
+  ::placeholder {
+    font-size: 20px; /* 원하는 크기 설정 */
+    text-align: center; /* 가운데 정렬 */
+    /* 상하 가운데 정렬 */
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+/*=================================================== input 속성 value ==================================================== */
+
+  #value {
+    padding-left: 20px;
+    
+    font-size: 20px;
+    
+    color: #767676;
+
+    box-sizing: border-box;
+  }
+
+  #intro_value {
+    padding-top: 20px;
+    padding-left: 20px;
+    
+    font-size: 20px;
+    font-weight: 600;
+    
+    color: #767676;
+
+    box-sizing: border-box;
+  }
+
+/* ------------------password 입력 부분-------------------------- */
+
+  .passwd_input {
+    display: flex;
+
+    height: 60px;
+  }
+
+  .passwd_input input {
+    width: 570px;
+    height: 60px;
+
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+
+    background-color: #f5f5f5;
+
+    
+  }
+
+/* ----------------------------변경 버튼 -------------------------*/
+
+  .passwd_btn {
+    width: 80px;
+    height: 60px;
+
+    margin-left: 20px;
+  }
+
+  .passwd_btn button {
+    width: 80px;
+    height: 60px;
+
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+
+    background-color: white;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #636363;
+  }
+
+/*=================================================== passwd 변경 클릭 후 ==================================================== */
+
+.current {
+  display: none;
+}
+
+/* ----------------------------소개글 버튼 -------------------------*/
+
+  .intro_sec {
+    display: flex;
+
+    height: 60px;
+
+    padding-bottom: 280px;
+  }
+
+  .intro_input {
+    display: flex;
+
+    height: 60px;
+  }
+
+  .intro_input textarea {
+    width: 570px;
+    height: 230px;
+
+    border: 1px solid #8b8b8b;
+    border-radius: 5px;
+
+    background-color: #f5f5f5;    
+  }
+
+  
+
+/* ----------------------------수정완료 버튼 -------------------------*/
+
+  .summit_btn {
+    width: 830px;
+    height: 60px;
+  }
+
+  .summit_btn button {
+    width: 830px;
+    height: 60px;
+
+    border: none;
+    border-radius: 5px;
+    background-color: #ffd954;
+
+    font-size: 20px;
+    font-weight: 600;
+
+    color: #796C40;
+  }

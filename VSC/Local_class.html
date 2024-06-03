@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>편한한끼</title>
+
+    
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="Local_class.css">
+    
+
+    <script src="JS/button_select.js"></script>
+  
+  
+</head>
+<body>
+    <header>
+        <nav> 
+       <div class="header">
+        <div class="logo">
+            <img src="img/Logo.png" alt="" width="130px" height="130px">
+        </div>
+        <div class="menus">
+            <ul>
+               <li><span><a href="#">농산물</a></span></li>
+               <li><span><a href="#">클래스</a></span></li>
+               <li><span><a href="#">레시피</a></span></li>
+               <li><span><a href="#">AI</a></span></li>
+               <li><a href="login.html"><button id="menu_btn">로그인</button></a></li>
+      
+            </ul>
+    
+        </div>
+       </div>
+         </nav>
+
+    </header>
+
+    <section>
+        <div class="container">
+          <section>
+            <div class="class_title">
+                <p>클래스</p>
+            </div>
+
+            <div class="category-head">
+                <p>상세 검색</p>
+            </div>
+
+            <div class="category-body">
+              <div class="row">
+                  <div class="left_1">
+                      <p>지역</p>   
+                  </div>
+                  <div class="right_1">           
+                      <div style="display: flex; margin-left: 80px; ">
+                          <button class="button_all">경상남도</button>
+                          <button class="button_dif">경상북도</button>
+                          <button class="button_dif">전라남도</button>
+                          <button class="button_dif">전라북도</button>
+                          <button class="button_dif">충청북도</button>
+                          <button class="button_dif">충청남도</button>
+                          <button class="button_dif">경기도</button>
+                          <button class="button_dif">강원도</button>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="row">
+                  <div class="left_2">
+                      <p>난이도</p>
+                  </div>
+                  <div class="right_2">
+                      <div style="display: flex; margin-left: 100px;">
+                          <button class="button_all">전체</button>
+                          <button class="button_dif">쉬움</button>
+                          <button class="button_dif">보통</button>
+                          <button class="button_dif">어려움</button>
+                      </div>
+                  </div>
+              </div>
+          
+              <div class="row">
+                  <div class="left_3">
+                      <p>검색</p>
+                  </div>
+                  <div class="right_3">
+                      <div style="display: flex; margin-left: 85px; ">
+                          <input type="text" id="searchInput" class="search_input" onkeyup="filterItems(currentDifficulty)" placeholder="검색어를 입력해주세요">
+                          <button class="search_btn" onclick="searchItems()">검색</button>
+                          <button class="clear_btn">초기화</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          
+
+
+        </section>
+
+        <section>
+            <div class="select_sec">
+                <select class="select_option" name="difficulty">
+                    <option value="recent">최신순</option>
+                    <option value="views">조회순</option>
+                </select>
+            </div>
+
+            <div style="display: flex; margin-top: 80px;">
+                    <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8; margin-right: 55px;">
+                    <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                    
+                      <div class="profile_sec">
+                            <div class="profile_pic">
+                                <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                            </div>
+                                  <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                      </div>
+
+                      <div class="foot_sec">
+                        <div class="progress">
+                            <p>진행중</p>
+                        </div>
+
+                        <p>34,333원</p>
+
+                      </div>
+
+                     
+                    </div>
+
+                    <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8; margin-right: 55px;">
+                        <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                        
+                          <div class="profile_sec">
+                                <div class="profile_pic">
+                                    <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                                </div>
+                                      <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                          </div>
+    
+                          <div class="foot_sec">
+                            <div class="deadline">
+                                <p>마감</p>
+                            </div>
+    
+                            <p>34,333원</p>
+    
+                          </div>
+    
+                         
+                        </div>
+
+                        <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8; margin-right: 55px;">
+                            <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                            
+                              <div class="profile_sec">
+                                    <div class="profile_pic">
+                                        <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                                    </div>
+                                          <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                              </div>
+        
+                              <div class="foot_sec">
+                                <div class="end">
+                                    <p>종료</p>
+                                </div>
+        
+                                <p>34,333원</p>
+        
+                              </div>
+        
+                             
+                            </div>
+
+                            <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8;">
+                                <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                                
+                                  <div class="profile_sec">
+                                        <div class="profile_pic">
+                                            <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                                        </div>
+                                              <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                                  </div>
+            
+                                  <div class="foot_sec">
+                                    <div class="progress">
+                                        <p>진행중</p>
+                                    </div>
+            
+                                    <p>34,333원</p>
+            
+                                  </div>
+            
+                                 
+                                </div>
+               
+            </div>
+
+            <div style="display: flex; margin-top: 80px;">
+                <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8; margin-right: 55px;">
+                <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                
+                  <div class="profile_sec">
+                        <div class="profile_pic">
+                            <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                        </div>
+                              <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                  </div>
+
+                  <div class="foot_sec">
+                    <div class="deadline">
+                        <p>마감</p>
+                    </div>
+
+                    <p>34,333원</p>
+
+                  </div>
+
+                 
+                </div>
+
+                <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8; margin-right: 55px;">
+                    <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                    
+                      <div class="profile_sec">
+                            <div class="profile_pic">
+                                <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                            </div>
+                                  <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                      </div>
+
+                      <div class="foot_sec">
+                        <div class="progress">
+                            <p>진행중</p>
+                        </div>
+
+                        <p>34,333원</p>
+
+                      </div>
+
+                     
+                    </div>
+
+                    <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8; margin-right: 55px;">
+                        <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                        
+                          <div class="profile_sec">
+                                <div class="profile_pic">
+                                    <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                                </div>
+                                      <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                          </div>
+    
+                          <div class="foot_sec">
+                            <div class="progress">
+                                <p>진행중</p>
+                            </div>
+    
+                            <p>34,333원</p>
+    
+                          </div>
+    
+                         
+                        </div>
+
+                        <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8;">
+                            <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                            
+                              <div class="profile_sec">
+                                    <div class="profile_pic">
+                                        <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                                    </div>
+                                          <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                              </div>
+        
+                              <div class="foot_sec">
+                                <div class="progress">
+                                    <p>진행중</p>
+                                </div>
+        
+                                <p>34,333원</p>
+        
+                              </div>
+        
+                             
+                            </div>
+           
+        </div>
+
+
+        <div style="display: flex; margin-top: 80px;">
+            <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8; margin-right: 55px;">
+            <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+            
+              <div class="profile_sec">
+                    <div class="profile_pic">
+                        <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                    </div>
+                          <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+              </div>
+
+              <div class="foot_sec">
+                <div class="progress">
+                    <p>진행중</p>
+                </div>
+
+                <p>34,333원</p>
+
+              </div>
+
+             
+            </div>
+
+            <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8; margin-right: 55px;">
+                <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                
+                  <div class="profile_sec">
+                        <div class="profile_pic">
+                            <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                        </div>
+                              <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                  </div>
+
+                  <div class="foot_sec">
+                    <div class="progress">
+                        <p>진행중</p>
+                    </div>
+
+                    <p>34,333원</p>
+
+                  </div>
+
+                 
+                </div>
+
+                <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8; margin-right: 55px;">
+                    <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                    
+                      <div class="profile_sec">
+                            <div class="profile_pic">
+                                <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                            </div>
+                                  <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                      </div>
+
+                      <div class="foot_sec">
+                        <div class="progress">
+                            <p>진행중</p>
+                        </div>
+
+                        <p>34,333원</p>
+
+                      </div>
+
+                     
+                    </div>
+
+                    <div style=" width: 284px; height: 435px; border: 1px solid #d8d8d8;">
+                        <img src="img/Rectangle 100.png" alt="" width="284px" height="295px">
+                        
+                          <div class="profile_sec">
+                                <div class="profile_pic">
+                                    <img src="img/profile-img.png" alt="" width="44px" height="44px">
+                                </div>
+                                      <p style="font-size: 18px; font-weight: bold;">손쉽게 만드는 반찬 클래스</p>
+                          </div>
+    
+                          <div class="foot_sec">
+                            <div class="progress">
+                                <p>진행중</p>
+                            </div>
+    
+                            <p>34,333원</p>
+    
+                          </div>
+    
+                         
+                        </div>
+       
+             </div>
+
+             <div style="display: flex; justify-content: center; margin-top: 100px;" >
+        
+                <div class="page_btn"><a href="?page=1"><img src="img/Vector (1).png"></a></div>
+                <div class="page_btn"><a href="">1</a></div>
+                <div class="page_btn"><a href="">2</a></div>
+                <div class="page_btn"><a href="">3</a></div>
+                <div class="page_btn"><a href="?page=${pager.last}"><img src="img/Vector (2).png"></a></div>
+        
+             </div>
+
+
+             <div style="height: 300px;"></div>
+    
+        </section>
+
+
+        </div>
+    </section>
+    
+</body>
+
+</html>

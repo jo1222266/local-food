@@ -1,100 +1,395 @@
-    .table1 {
-        width: 80%;
-        border-top: 1px solid #939393;
-        border-collapse: collapse;
-        margin: auto;
-        margin-top: 80px;
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    
+  } 
+
+  a {
+   color: inherit; /* 링크가 방문되었을 때의 색상을 부모 요소의 색상으로 상속 */
+   text-decoration: none;
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+    
+  
+  }
+
+  .logo {
+    padding-left: 160px;
+    font-size: 32px;
+    margin-top: 20px;
+ }
+
+ 
+ .menus {
+    padding-right: 150px;
+    font-size: 20px;
+ }
+
+ .header ul li {
+    display: inline-block;
+    padding-left: 40px;
+    text-align: center;
+    padding: 50px;
+   }
+  
+ 
+   #menu_btn {
+    width: 168px;
+    height: 53px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    font-size: 20px;
+    border: solid 0.1px white;
+    cursor: pointer;
+    
     }
 
-    .table2 {
-        width: 80%;
-        border-top: 1px solid #939393;
-        border-collapse: collapse;
-        margin: auto;
-        margin-top: 80px;
+    .container {
+      width: 1244px;
+      margin: 0 auto;
+      margin-top: 50px;
     }
 
-    th,
-    td {
-        border-bottom: 1px solid #444444;
-        padding: 10px;
-        text-align: center;
+    .body {
+      display: flex;
     }
 
-    .square {
-        width: 450px;
-        height: 450px;
-        background-color: gray;
-        margin-top: 45px;
-        margin-left: 300px;
-        float: left;
+    .class_info_sec {
+      width: 748px;
+      height: 434px;
+      margin-left: 46px;
+      margin-top: 15px;
+      padding: 10px;
     }
 
-    .square1 {
-        width: 700px;
-        height: 450px;
-        background-color: gray;
-        margin-top: 50px;
-        margin-left: 1000px;
+    .tags {
+      display: flex;
+      font-size: 14px;
     }
 
-    #margin {
-        padding-top: 72px;
+    .tag1 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 62px;
+      height: 24px;
+      border: 0;
+      border-radius: 20px;
+      background-color: #ffc755;
     }
 
-    #tag {
-        float: left;
-        margin-right: 49px;
-        margin-left: 103px;
+    
+    .tag2 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 62px;
+      height: 24px;
+      border: 0;
+      border-radius: 20px;
+      background-color: #f1c232;
+      margin-left: 16px;
+    }
+
+    
+    .tag3 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 62px;
+      height: 24px;
+      border: 0;
+      border-radius: 20px;
+      background-color: #fff2c9;
+      margin-left: 16px;
 
     }
 
-    #tag1 {
-        float: left;
-        margin-right: 49px;
+    
+    .tag4 {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 62px;
+      height: 24px;
+      border: 0;
+      border-radius: 20px;
+      background-color: #8dea76;
+      margin-left: 16px;
 
     }
 
-    #tag2 {}
-
-    #title {
-        font-size: 20px;
-        display: flex;
-        padding-left: 86px;
-        padding-top: 24px;
+    .class_title {
+      font-size: 23px;
+      font-weight: bold;
+      margin-top: 16px;
     }
 
-    #time {
-        display: flex;
-        padding-left: 86px;
-        padding-top: 32px;
+    .class_info {
+      font-size: 16px;
+      margin-top: 20px;
     }
 
-    #people {
-        display: flex;
-        padding-left: 86px;
-        padding-top: 20px;
+    .label_div {
+      width: 100px;
+      border-right: 1px solid;
+      margin-top: 10px;
     }
 
-    #level {
-        display: flex;
-        padding-left: 86px;
-        padding-top: 20px;
+    .row {
+      display: flex; 
+      align-items: baseline;
     }
 
-    #stars {
-        display: flex;
-        padding-left: 86px;
-        padding-top: 36px;
+    .row p {
+      margin-left: 40px;
     }
 
-    #myform div{
-        font-size: 30px;
-        color: transparent;
-        text-shadow: 0 0 0 #FFC700;
-        display: flex;
+    .grade_sec {
+      margin-top: 33px;
+    }
+
+    .stars {
+      display: flex;
+      margin-left: 5px;
+      
     }
 
     #star1 {
-        float: left;
+      width: 18px;
+      height: 18px;
+      color: #ffc700;
     }
+
+    #star2 {
+      width: 18px;
+      height: 18px;
+      color: #ffc700;
+      margin-left: 1px;
+    }
+
+    .profile_sec {
+      display: flex;
+      align-items: center;
+      width: 720px;
+      height: 54px;
+      border-top: 1px solid #939393;
+      border-bottom: 1px solid #939393;
+    }
+
+
+    #map {width: 450px; height: 450px;}
+    .info {
+        display: flex; 
+        margin-top: 150px; 
+        margin-left: 50px;
+    }
+    .info img {
+        width: 23px; 
+        height: 30px;
+    }
+    .info p {
+        margin-left: 20px; 
+        font-size: 20px;
+    }
+
+    .profile_pic{
+      width: 36px; /* 원의 지름을 결정합니다 */
+    height: 36px; /* 원의 지름을 결정합니다 */
+    border-radius: 50%; /* 50%로 설정하여 동그란 모양이 되도록 합니다 */
+    margin-left: 20px;
+    overflow: hidden; /* 내부 이미지를 원 모양에 맞추기 위해 필요합니다 */
+    }
+  
+    .profile_pic img {
+      width: 100%; /* 부모 요소의 너비에 맞추어 이미지 크기를 조정합니다 */
+      height: auto; /* 이미지 비율 유지 */
+    }
+
+    .nickname {
+      font-size: 18px;
+      margin-left: 25px;
+    }
+
+    .message_img {
+      margin-left: 425px;
+    }
+
+    .select-date-button {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      width: 221px;
+      height: 47px;
+      background-color: #f5f6f7;
+      font-size: 18px;
+      border: 0;
+      cursor: pointer;
+      
+  }
+
+  .people_btn {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 221px;
+    height: 47px;
+    background-color: #f5f6f7;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.reserve_btn {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 158px;
+  height: 51px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #fbfacd;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 90px;
+  cursor: pointer;
+}
+
+   .calendar {
+    display: none;
+    position: absolute;
+    margin-top: 10px;
+  }
+
+  .btn_sec {
+    display: flex;
+    margin-top: 23px;
+  }
+
+  .class_detail {
+    display: flex;
+    align-items: center;
+    width: 1260px;
+    height: auto;
+
+    margin-top: 88px;
+  }
+  
+
+  .detail_title {
+    font-size: 27px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .custom-hr {
+    width: 1042px;
+    margin-left: 50px;
+
+}
+
+.custom-hr-1 {
+  width: 1030px;
+  margin-left: 50px;
+
+}
+
+.custom-hr-2 {
+  width: 1045px;
+  margin-left: 50px;
+}
+
+.custom-hr-3 {
+  width: 1125px;
+  margin-left: 60px;
+
+}
+
+  .detail {
+    width: 700px;
+    margin-top: 55px;
+    margin-left: 15px;
+    padding-bottom: 30px;
+  }
+
+  .curri_sec {
+    width: 215px;
+    height: 320px;
+  }
+
+  .curri_title{
+    font-size: 27px;
+    font-weight: bold;
+  }
+
+  .curri_detail_sec {
+    width: 189px;
+    margin-left: 15px;
+    margin-top: 40px;
+    
+  }
+
+  .number {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 33px;
+    height: 30px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #d9d9d9;
+    font-size: 20px;
+    font-weight: bold;
+    
+  }
+
+  .curri_val_first {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+  }
+
+  .curri_val {
+    font-size: 18px;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-top: 77px;
+  }
+
+  .reserve_cancel_sec {
+    display: flex;
+    padding: 40px;
+    font-size: 20px;
+    font-weight: 500;
+  }
+
+  
+
+  .reserve_cancel_sec :nth-child(2) {
+    margin-left: 30px;
+  }
+
+  .reserve_cancel_sec :nth-child(3) {
+    margin-left: 50px;
+  }
+
+  .images {
+    
+    margin-top: 70px;
+    margin-left: 100px;
+  }
+
+  .img {
+    padding-left: 80px;
+  }

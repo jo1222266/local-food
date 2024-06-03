@@ -1,0 +1,263 @@
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    
+    
+  } 
+
+  a {
+   color: inherit; /* 링크가 방문되었을 때의 색상을 부모 요소의 색상으로 상속 */
+   text-decoration: none;
+  }
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    border-bottom: 1px solid black;
+    
+  
+  }
+
+  .logo {
+    padding-left: 160px;
+    font-size: 32px;
+    margin-top: 20px;
+ }
+
+ 
+ .menus {
+    padding-right: 150px;
+    font-size: 20px;
+ }
+
+ .header ul li {
+    display: inline-block;
+    padding-left: 40px;
+    text-align: center;
+    padding: 50px;
+   }
+
+   #menu_btn {
+    width: 168px;
+    height: 53px;
+    background-color: #d9d9d9;
+    border-radius: 20px;
+    font-size: 20px;
+    border: solid 0.1px white;
+    
+    }
+
+    .body {
+      width: 775px;
+      height: auto;
+      
+      margin: 0 auto; /* 가로 가운데 정렬 */
+      margin-top: 100px;
+
+    }
+
+    .recipe_info_head {
+      display: flex;
+      align-items: center;
+      margin-top: 55px;
+
+    }
+
+    .recipe_title {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .recipe_info_body {
+      display: flex;
+      margin-top: 44px;
+    }
+
+    .recipe_info_foot {
+      display: flex;
+      margin-top: 51px;
+    }
+
+    .exp {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .exp_value {
+      font-size: 20px;
+      margin-left: 48px;
+      color: #7c7f81;
+    }
+
+
+    .f_tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 107px;
+      height: 34px;
+      border-radius: 50px;
+      background-color: #f6e4a4;
+      font-size: 18px;
+      font-weight: bold;
+
+    }
+
+    .tag {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 107px;
+      height: 34px;
+      border-radius: 50px;
+      background-color: #f6e4a4;
+      margin-left: 35px;
+      font-size: 18px;
+      font-weight: bold;
+
+    }
+
+    
+    .profile_pic{
+      width: 73px; /* 원의 지름을 결정합니다 */
+      height: 73px; /* 원의 지름을 결정합니다 */
+      border-radius: 50%; /* 50%로 설정하여 동그란 모양이 되도록 합니다 */
+
+      overflow: hidden; /* 내부 이미지를 원 모양에 맞추기 위해 필요합니다 */
+     }
+
+    .profile_pic img {
+      width: 100%; /* 부모 요소의 너비에 맞추어 이미지 크기를 조정합니다 */
+      height: auto; /* 이미지 비율 유지 */
+     }
+
+    .profile_title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-left: 50px;
+    }
+
+    .profile_sec {
+      display: flex;
+      align-items: center;
+      margin-top: 100px;
+    }
+
+    .profile_intro {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 55px;
+    }
+
+    .ingre_head {
+      display: flex;
+      justify-content: space-between;
+      width: 762px;
+      height: 52px;
+      border-bottom: 1px solid #8e8e8e;
+      margin-top: 125px;
+    }
+
+    .ingre_head :nth-child(1) {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .recipe_explan {
+      margin-left: 77px;
+    }
+
+    .recipe_top {
+      display: flex;
+      justify-content: space-between;
+      width: 424px;
+      height: 43px;
+      border-bottom: 1px solid #8e8e8e;
+    }
+
+    .recipe_top :nth-child(1) {
+      font-size: 21px;
+      font-weight: bold;
+    }
+
+    .recipe_bottom {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 34px;
+    }
+
+    .ingre_head :nth-child(2) {
+      font-size: 20px;
+      color: #7c7f81;
+    }
+
+    .ingre_body {
+      display: flex;
+      width: 646px;
+      height: 256px;
+      padding-left: 56px;
+    }
+
+    .ingre_sec {
+      width: auto;
+      
+    }
+
+    .ingre_sec_1 {
+      width: 340px;
+      height: 256px;
+      border-right: 1px solid #eeeeee;
+    }
+
+    .ingre_sec_2 {
+      width: 306px;
+      height: 256px;
+    }
+
+    .ingre {
+      display: flex;
+      font-size: 18px;
+      font-weight: bold;
+      padding-top: 20px;
+    }
+    
+    .equipment {
+      display: flex;
+      font-size: 18px;
+      font-weight: bold;
+      padding-top: 20px;
+    }
+
+    .equipment p {
+      width: 170px;
+      box-sizing: border-box;
+    }
+
+    .ingre1 {
+      width: 170px;
+    } 
+
+    #list_btn {
+      width: 293px;
+      height: 72px;
+      border-radius: 30px;
+      background-color: #a0a0a0;
+      color: #ffffff;
+      border: 0;
+      font-size: 20px;
+      font-weight: bold;
+      cursor: pointer;
+
+    }
+
+    #list_btn:hover {
+      background-color: #ffffff;
+      color: #a0a0a0;
+      border: 1px solid #a0a0a0;
+    }

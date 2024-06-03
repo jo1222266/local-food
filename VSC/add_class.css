@@ -1,0 +1,412 @@
+
+
+
+.profile_pic{
+    width: 110px; /* 원의 지름을 결정합니다 */
+  height: 110px; /* 원의 지름을 결정합니다 */
+  border-radius: 50%; /* 50%로 설정하여 동그란 모양이 되도록 합니다 */
+
+  overflow: hidden; /* 내부 이미지를 원 모양에 맞추기 위해 필요합니다 */
+  margin-left: 190px;
+  margin-top: 70px;
+  }
+
+  .profile_pic img {
+    width: 100%; /* 부모 요소의 너비에 맞추어 이미지 크기를 조정합니다 */
+  height: auto; /* 이미지 비율 유지 */
+  }
+  
+  #profile_sec{
+     width: 420px;
+     height: 1320px;
+     margin-left: 200px;
+  }
+
+  .short_cut {
+    margin-bottom: 10px;
+  } 
+
+  .container {
+    width: 923px;
+    margin: 0 auto;
+  }
+  
+
+  .navbar1 {
+    width: 165px; 
+    height: 20px; 
+    background-color: #f5f5f5; 
+    margin-left: 145px;
+    padding: 20px;
+  }
+  
+    .navbar2 {
+      width: 165px; 
+      height: 95px; 
+      background-color: #f5f5f5; 
+      margin-left: 145px;
+      padding: 20px;
+    }
+  
+    .navbar3 {
+      width: 165px; 
+      height: 60px; 
+      background-color: #f5f5f5; 
+      margin-left: 145px;
+      padding: 20px;
+    }
+  
+  
+    .navbar2 p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    .navbar3 p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+  
+    .profile_title {
+     font-size: 20px; 
+     margin-top: 10px; 
+     width: 150px; 
+     text-align: center;
+    }
+
+    .profile_detail {
+      margin-top: 5px; 
+      margin-bottom: 30px;
+    }
+
+    #title {
+        font-size: 25px;
+        font-weight: bold;
+        margin-top: 75px;
+        padding: 15px;
+      }
+  
+      .section_1 {
+        display: flex;
+        width: 923px;
+        border: 1px solid #c3c3c3;
+        border-radius: 20px;
+        margin-top: 20px;
+        padding-bottom: 30px;
+      }
+
+      
+    .section_1_img {
+        width: 230px;
+        height: 230px; 
+        background-color: #d9d9d9;
+        margin: 35px;
+      }
+
+      .section_1_p {
+        font-size: 17px;
+        font-weight: 600;
+      }
+
+      .input_box_1 {
+        margin-top: 10px;
+        width: 485px;
+        height: 40px;
+        background-color: #f9f9f9;
+        border: 0.5px solid #e4e4e4;
+        border-radius: 5px;
+        font-size: 16px;
+      }
+
+      .input_box_3 {
+        margin-top: 20px;
+        width: 125px;
+        height: 38px;
+        background-color: #f9f9f9;
+        border: 0.5px solid #e4e4e4;
+        border-radius: 5px;
+        font-size: 16px;
+       
+        
+      }
+
+      
+      .input_box_price {
+        
+        width: 125px;
+        height: 38px;
+        background-color: #f9f9f9;
+        border: 0.5px solid #e4e4e4;
+        border-radius: 5px;
+        font-size: 16px;
+       
+        
+      }
+  
+      .input_box_4 {
+        margin-top: 20px;
+        width: 125px;
+        height: 38px;
+        background-color: #f9f9f9;
+        border: 0.5px solid #e4e4e4;
+        border-radius: 5px;
+        margin-left: 15px;
+       
+      }
+
+      input {
+       padding-left: 15px;
+      }
+
+       /* placeholder에 스타일 적용 */
+    input::placeholder {
+        color: #b2b2b2; /* placeholder 텍스트 색상 */
+        font-size: 16px; /* placeholder 폰트 크기 */
+        /* font-style: italic; placeholder 폰트 스타일 */
+      }
+
+      .select_option {
+        margin-top: 20px;
+        width: 125px;
+        height: 40px;
+        background-color: #f9f9f9;
+        border: 0.5px solid #e4e4e4;
+        border-radius: 5px;
+        
+        font-size: 16px;
+        font-weight: bold;
+      }
+
+      .calendar {
+        display: none;
+        position: absolute;
+        right: 600px;
+        top: 780px;
+        margin-top: 10px;
+    }
+
+
+    .select-date-button {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 230px;
+        height: 44px;
+        background-color: #f5f6f7;
+        font-size: 18px;
+        border: 0;
+        cursor: pointer;
+        margin-left: 80px;
+        
+    }
+
+    .section_2 {
+        width: 923px;
+        height: auto;
+        border: 1px solid #c3c3c3;
+        border-radius: 20px;
+        margin-top: 60px;
+        
+      }
+
+      .ingre_title{
+        display: flex; 
+        margin-left: 40px;
+        margin-top: 30px;
+      }
+
+      .text_sec {
+        padding-left: 40px;
+        padding-top: 20px;
+      }
+
+      .text_sec_box {
+        width: 835px;
+        height: 248px;
+        font-size: 18px;
+        font-weight: 600;
+      }
+
+      textarea {
+        resize: none;
+       }
+
+
+       .section_3 {
+        width: 923px;
+        border: 1px solid #c3c3c3;
+        border-radius: 20px;
+        margin-top: 56px;
+        padding-bottom: 40px;
+      }
+
+      .cook_sec_head {
+        display: flex;
+        justify-content: space-between;
+        padding-left: 40px;
+        padding-right: 70px;
+        padding-top: 30px;
+      }
+  
+      #cooking_add_btn {
+        width: 100px;
+        height: 29px;
+        color: #7a7a7a;
+        background-color: #ffffff;
+        border: 1px solid #d8d8d8;
+        border-radius: 10px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+    
+      .step {
+        font-size: 25px;
+        font-weight: bold;
+      }
+
+      .step_sec {
+        display: flex;
+        margin-left: 60px;
+        margin-top: 35px;
+      }
+
+      .step_detail {
+        display: flex;
+        margin-left: 65px;
+        margin-top: 20px;
+      }
+
+      .step_input {
+        width: 662px;
+        height: 38px;
+        background-color: #f9f9f9;
+        border: 1px solid #e4e4e4;
+      }
+
+      .delete_btn {
+        width: 29px;
+        height: 29px;
+        font-size: 25px;
+        border: 0;
+        background-color: #ffffff;
+        color: #bcbcbc;
+        border-radius: 10px;
+        margin-left: 5px;
+        cursor: pointer;
+      }
+
+      .section_4 {
+        width: 923px;
+        border: 1px solid #c3c3c3;
+        border-radius: 20px;
+        margin-top: 56px;
+        padding-bottom: 50px;
+      }
+  
+      .pic_sec {
+       margin-left: 80px;
+       margin-top: 45px;
+      }
+
+      .finished_pic {
+        padding-right: 60px;
+      }
+
+
+
+      .buttons {
+        margin-top: 55px;
+        margin-left: 290px;
+      }
+
+      .save_btn {
+        width: 150px;
+        height: 55px;
+        background-color: #192e4d;
+        color: #ffffff;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: none;
+        cursor: pointer;
+      }
+  
+      .cancel_btn {
+        width: 150px;
+        height: 55px;
+        background-color: #ffffff;
+        color: #9e9e9e;
+        font-size: 20px;
+        font-weight: bold;
+        border-radius: 10px;
+        border: 1px solid #dedede;
+        margin-left: 22px;
+        cursor: pointer;
+      }
+
+
+      .section_5 {
+        width: 923px;
+        border: 1px solid #c3c3c3;
+        border-radius: 20px;
+        margin-top: 56px;
+        padding-bottom: 50px;
+      }
+
+      .reserve_sec {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: 70px;
+      }
+
+      .reserve_sec label {
+        width: 80px;
+        font-size: 20px;
+        font-weight: bold;
+       
+      }
+
+      .reserve_sec input {
+        width: 130px;
+        height: 38px;
+        font-size: 17px;
+        color: #929292;
+        border: 0.5px solid #e4e4e4;
+        border-radius: 5px;
+      }
+
+      
+      .reserve_sec p {
+        margin-left: 5px;
+      }
+
+      .cancel_sec {
+        display: flex;
+        align-items: center;
+        margin-top: 40px;
+        margin-left: 70px;
+      }
+
+      .cancel_sec input {
+        width: 130px;
+        height: 38px;
+        font-size: 17px;
+        color: #9a9a9a;
+        border: 0.5px solid #e4e4e4;
+        border-radius: 5px;
+      }
+
+      .cancel_sec label {
+        width: 80px;
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      
+      .cancel_sec p {
+        margin-left: 5px;
+      }
+
+    

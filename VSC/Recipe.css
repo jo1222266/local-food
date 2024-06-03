@@ -82,87 +82,101 @@
     margin-bottom: 10px;
   } 
 
-
-  .class_sec {
-    display: flex;
-    width: 1116px;
-    height: 340px;
-    border-top: 1px solid #cfcfcf;
-    align-items: center;
-    
-}
-
-
-.classes {
-    margin-left: 100px;
-}
-
-
-
-.class_desc_sec {
-    margin-left: 25px;
-
-}
-
-.class_desc {
-   width: 950px;
-   margin-top: 24px;
-   font-size: 16px;
-}
-
-.class_info {
-    display: flex;
-    margin-top: 15px;
-}
-
-.class_title {
-    font-size: 26px;
-    font-weight: 500;
-}
-
-.class_price {
-    display: flex;
-    
-    margin-top: 55px;
-
-}
   
 
-.navbar1 {
-  width: 165px; 
-  height: 20px; 
-  background-color: #f5f5f5; 
-  margin-left: 145px;
-  padding: 20px;
-}
-
-  .navbar2 {
+  .navbar1 {
     width: 165px; 
-    height: 95px; 
+    height: 20px; 
     background-color: #f5f5f5; 
     margin-left: 145px;
     padding: 20px;
   }
+  
+    .navbar2 {
+      width: 165px; 
+      height: 50px; 
+      background-color: #f5f5f5; 
+      margin-left: 145px;
+      padding-left: 20px;
+      padding-right: 20px;
+      padding-bottom: 20px;
+      padding-top: 10px;
+      
+    }
 
-  .navbar3 {
+    .navbar_head {
     width: 165px; 
-    height: 60px; 
+    height: 20px; 
     background-color: #f5f5f5; 
     margin-left: 145px;
     padding: 20px;
-  }
+    }
 
+    .navbar_head_select {
+       width: 165px; 
+       height: 20px; 
+       background-color: #d9d9d9; 
+       margin-left: 145px;
+       padding: 20px;
+    }
 
-  .navbar2 p {
-    font-size: 18px;
-    font-weight: bold;
-  }
+    .navbar_head_select p {
+      font-size: 18px;
+      font-weight: bold;
+   }
 
-  .navbar3 p {
-    font-size: 18px;
-    font-weight: bold;
-  }
+    .navbar_head p {
+      font-size: 18px;
+      font-weight: bold;
+    }
   
+    .navbar3 {
+      width: 165px; 
+      height: 65px; 
+      background-color: #f5f5f5; 
+      margin-left: 145px;
+      padding: 0 20px 20px 20px;
+    }
+
+    
+    .navbar4 {
+      width: 165px; 
+      height: 20px; 
+      background-color: #f5f5f5; 
+      margin-left: 145px;
+      padding: 20px;
+    }
+
+    .navbar5 {
+      width: 165px; 
+      height: 30px; 
+      background-color: #f5f5f5; 
+      margin-left: 145px;
+      padding: 0 20px 20px 20px;
+    }
+  
+  
+  
+    .navbar2 p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  
+    .navbar3 p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .navbar4 p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .navbar5 p {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
   .s_top_nav {
     width: 330px;
     height: 50px;
@@ -195,8 +209,8 @@
   }
 
   .recipes {
-    margin-top: 100px;
-    height: 2200px;
+    width: 992px;
+    height: 1700px;
   }
 
   .food_img {
@@ -212,6 +226,16 @@
     color: #696969;
 }
 
+.one_line_first {
+  display: flex;
+  margin-top: 30px;
+}
+
+.one_line {
+  display: flex;
+  margin-top: 70px;
+}
+
 .page_btn {
   width: 40px;
   height: 40px;
@@ -225,8 +249,6 @@
   border: 1px solid #9b9b9b;
   font-size: 20px;
 }
-
-
 
 .tag {
   width: 85px;

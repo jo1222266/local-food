@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="profile_update.css">
+    <link rel="stylesheet" href="header.css">
+</head>
+<body>
+
+<!-- =========================헤더 부분============================ -->
+    <header>
+        <nav> 
+        <div class="header">
+            <div class="logo">
+                <img src="img/Logo.png" alt="" width="130px" height="130px">
+            </div>
+            <div class="menus">
+                <ul>
+                    <li><span><a href="#"><img src="img/heart.png" alt=""></a></span></li>
+                    <li><a href="login.html"><button id="menu_btn">로그인</button></a></li>
+                </ul>
+    
+            </div>
+        </nav>
+    </header>
+
+<!-- ========================프로필 이미지============================== -->
+
+    <section>
+        <div id="profile_sec">
+            <div class="pic_sec">
+                <div class="profile_pic">
+                    <img src="img/profile-img.png" alt="">
+                </div>
+            </div>
+
+        <!-- ======================내비 타이틀================================ -->
+            
+            <div class="nav_title">
+                <p class="profile_title">포켓몬 마스터</p>
+                <p class="profile_detail">포켓몬 마스터입니다~!</p>            
+            </div>
+
+        <!-- =======================레시피============================= -->
+            
+            <div class="nav_sec">
+                <div class="navbar1">
+                    <a href="Recipe_v2.html">레시피</a><br>
+                </div>
+
+                <div class="short_cut"></div>
+
+        <!-- =======================원데이클래스============================= -->
+                
+                <div class="navbar2">
+                    <p>원데이 클래스</p>
+                </div>
+
+                <div class="navbar3">
+                    <a href="#">예약현황 확인</a><br>
+                </div>
+
+                <div class="short_cut"></div>
+
+        <!-- ======================내정보============================== -->
+                
+                <div class="navbar4">
+                    <p>내 정보</p>
+                </div>
+
+                <div class="navbar5">
+                    <a href="#">프로필 수정</a><br>
+                </div>
+
+            </div>
+        </div>
+
+<!-- ====================쓰기 부분=========================== -->
+        
+        <div class="write">
+            <div class="write_profile">
+
+                <div class="profile_pic2">
+                    <img src="img/profile_img2.jpg" alt="">
+                </div>
+
+                <div class="text_1"><p>기본 이미지 선택</p></div>
+                <div class="text_2"><p>사진 불러오기</p></div>
+
+            </div>
+
+            <div class="write_input">
+                
+                <div>
+
+                    <!-------------------닉네임---------------------->
+
+                    <div class="input_sec">
+                        <div class="label">
+                            <label>닉네임</label>
+                        </div>
+                        
+                        <div class="input">
+                            <input type="text" id="value" value="요리마스터">
+                        </div>
+                    </div>
+
+                    <!-------------------휴대전화---------------------->
+
+                    <div class="input_sec">
+                        <div class="label">
+                            <label>휴대전화</label>
+                        </div>
+                        
+                        <div class="input">
+                            <input type="text" id="value" value="01083537225">
+                        </div>
+                    </div>
+
+                    <!-------------------비밀번호---------------------->
+                    <div class="passwdF">
+                        <div class="input_sec">
+                            <div class="label">
+                                <label>비밀번호</label>
+                            </div>
+                            
+                            <div class="passwd_input">
+                                <input type="text" id="value" value="fee@?2324del">
+                                <div class="passwd_btn">
+                                    <button class="btn1">변경</button>
+                                </div>
+                            </div>
+    
+                        </div>
+                    </div>
+
+                    <!--====================================== javascript =====================================-->
+
+                    <script>
+                        function addClass(element, className) {
+                            if (element.classList) {
+                            element.classList.add(className);
+                            } else {
+                            // IE9 이하에서는 classList가 지원되지 않으므로 className 속성을 사용합니다.
+                            element.className += ' ' + className;
+                            }
+                        }
+
+                        function removeClass(element, className) {
+                            if (element.classList) {
+                            element.classList.remove(className);
+                            } else {
+                            // IE9 이하에서는 classList가 지원되지 않으므로 className 속성을 사용합니다.
+                            element.className += ' ' + className;
+                            }
+                        }
+
+                        document.querySelector('.btn1').addEventListener('click', function() {
+                            var passwdF = document.querySelector('.passwdF');
+                            addClass(passwdF, 'current');
+
+                            var passwdS = document.querySelector('.passwdS');
+                            removeClass(passwdS, 'current');
+                        });
+                    </script>
+
+                    <!-------------------변경 버튼 클릭 후 비밀번호---------------------->
+                    <div class="passwdS current">
+                        <div class="input_sec">
+                            <div class="label">
+                                <label>비밀번호</label>
+                            </div>
+                            
+                            <div class="passwd_input">
+                                <input type="text" id="value" value="fee@?2324del">
+                                <div class="passwd_btn">
+                                    <button class="btn2">취소</button>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="input_sec">
+                            <div class="label">
+                                <label></label>
+                            </div>
+    
+                            <div class="passwd_input">
+                                <input type="text" id="value" class="password" placeholder="비밀번호를 입력해주세요.">
+                            </div>
+                        </div>
+                        
+                        <div class="input_sec">
+                            <div class="label">
+                                <label></label>
+                            </div>
+    
+                            <div class="passwd_input">
+                                <input type="text" id="value" class="password_check" placeholder="비밀번호를 입력해주세요.">
+                                <div class="passwd_btn">
+                                    <button class="summit">확인</button>
+                                </div>
+                            </div>
+
+                            <div class="warning"></div>
+                        </div>
+                    </div>
+
+                    <!--====================================== javascript =====================================-->
+                    <script>
+                        function addClass(element, className) {
+                            if (element.classList) {
+                            element.classList.add(className);
+                            } else {
+                            // IE9 이하에서는 classList가 지원되지 않으므로 className 속성을 사용합니다.
+                            element.className += ' ' + className;
+                            }
+                        }
+
+                        function removeClass(element, className) {
+                            if (element.classList) {
+                            element.classList.remove(className);
+                            } else {
+                            // IE9 이하에서는 classList가 지원되지 않으므로 className 속성을 사용합니다.
+                            element.className += ' ' + className;
+                            }
+                        }
+
+                        document.querySelector('.btn2').addEventListener('click', function() {
+                            var passwdF = document.querySelector('.passwdF');
+                            removeClass(passwdF, 'current');
+
+                            var passwdS = document.querySelector('.passwdS');
+                            addClass(passwdS, 'current');
+                        });
+                    </script>
+
+                    <!--====================================== javascript =====================================-->
+
+                    
+                    <!----------------------소개글------------------------>
+
+                    <div class="intro_sec">
+                        <div class="label">
+                            <label>소개글</label>
+                        </div>
+                        
+                        <div class="intro_input">
+                            <textarea id="intro_value">요리 마스터입니다~!</textarea>
+                        </div>
+                    </div>
+
+                    <!-------------------수정완료---------------------->
+
+                    <div class="summit_sec">
+                        <div class="summit_btn">
+                            <button>수정완료</button>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+</body>
+</html>

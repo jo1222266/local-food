@@ -1,0 +1,325 @@
+.container {
+  width: 1120px;
+  margin: 0 auto;
+  margin-top: 75px;
+}
+
+.section_1 {
+  display: flex;
+}
+
+.section_2 {
+  width: 1120px;
+  height: 304px;
+  border: 1px solid #8d8d8d;
+  border-radius: 20px;
+  margin-top: 90px;
+}
+
+.section_3 {
+  width: 1120px;
+  height: 280px;
+  border: 1px solid #8d8d8d;
+  border-radius: 20px;
+  margin-top: 90px;
+}
+
+.section_2_div {
+  margin-left: 35px;
+  margin-top: 40px;
+}
+
+.section_3_div {
+  margin-left: 35px;
+  margin-top: 30px;
+}
+
+
+.section_3_div_2 {
+  display: flex;
+  align-items: center;
+  margin-top: 40px;
+  font-size: 20px;
+}
+
+.section_3_div_2 :nth-child(2) {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 60px;
+}
+
+.section_3_div_2 :nth-child(3) {
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.section_4 {
+  margin-top: 100px;
+}
+
+.section_5 {
+  width: 983px;
+  height: 291px;
+  padding-left: 60px;
+  margin-top: 128px;
+}
+
+.section_6 {
+  width: 1120px;
+  height: 663px;
+  border: 1px solid #8d8d8d;
+  border-radius: 20px;
+  margin-top: 120px;
+}
+
+.section_7 {
+  width: 1120px;
+  height: 490px;
+  border: 1px solid #8d8d8d;
+  border-radius: 20px;
+  margin-top: 60px;
+}
+
+
+
+
+.section_6_div {
+  width: 1100px;
+  height: 524px;
+  padding-top: 40px;
+  padding-left: 50px;
+}
+
+.section_7_div {
+  margin-left: 50px;
+  margin-top: 40px;
+}
+
+.section_6_row {
+  display: flex;
+  align-items: center;
+}
+
+.section_6_row_1 {
+  display: flex;
+}
+
+.row_div {
+  display: flex;
+  align-items: center;
+  width: 759px;
+  height: 69px;
+  border-radius: 10px;
+  border: 1px solid #8d8d8d;
+  margin-left: 50px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 30px;
+}
+
+.row_div_1 {
+  display: flex;
+  align-items: center;
+  width: 759px;
+  height: 124px;
+  border-radius: 10px;
+  border: 1px solid #8d8d8d;
+  margin-left: 25px;
+  font-size: 25px;
+  font-weight: bold;
+  padding-left: 30px;
+  padding-top: 30px;
+  resize: none;
+}
+
+.row_div_1::placeholder {
+  color: #bcbcbc;
+}
+
+.class_info_sec {
+  margin-left: 50px;
+}
+
+.tags {
+  display: flex;
+  font-size: 14px;
+}
+
+.tag1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107px;
+  height: 41px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #ffc755;
+  font-size: 18px;
+}
+
+
+.tag2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107px;
+  height: 41px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #f1c232;
+  margin-left: 30px;
+  font-size: 18px;
+}
+
+
+.tag3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107px;
+  height: 41px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #fff2c9;
+  margin-left: 30px;
+  font-size: 18px;
+
+}
+
+
+.tag4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 107px;
+  height: 41px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #8dea76;
+  margin-left: 30px;
+  font-size: 18px;
+
+}
+
+.class_info {
+  font-size: 16px;
+  margin-top: 60px;
+}
+
+.row {
+  display: flex; 
+  align-items: baseline;
+}
+
+.row p {
+  margin-left: 40px;
+}
+
+.label_div {
+  width: 100px;
+  border-right: 1px solid;
+  margin-top: 10px;
+}
+
+.profile_sec {
+  display: flex;
+  align-items: center;
+  width: 720px;
+  height: 54px;
+  margin-top: 60px;
+}
+
+
+.profile_pic{
+  width: 62px; /* 원의 지름을 결정합니다 */
+height: 62px; /* 원의 지름을 결정합니다 */
+border-radius: 50%; /* 50%로 설정하여 동그란 모양이 되도록 합니다 */
+overflow: hidden; /* 내부 이미지를 원 모양에 맞추기 위해 필요합니다 */
+}
+
+.profile_pic img {
+  width: 100%; /* 부모 요소의 너비에 맞추어 이미지 크기를 조정합니다 */
+  height: auto; /* 이미지 비율 유지 */
+}
+
+.nickname {
+  font-size: 18px;
+  margin-left: 25px;
+}
+
+.online_pay {
+  display: flex;
+  align-items: center;
+  width: 983px;
+  height: 89px;
+  border-radius: 20px;
+  border: 1px solid #8d8d8d;
+  margin-top: 38px;
+  cursor: pointer;
+}
+
+.direct_pay {
+  display: flex;
+  align-items: center;
+  width: 983px;
+  height: 89px;
+  border-radius: 20px;
+  border: 1px solid #8d8d8d;
+  margin-top: 38px;
+  cursor: pointer;
+}
+
+.circle {
+  width: 43px;
+  height: 43px;
+  border-radius: 50px;
+  border: 1px solid #8d8d8d;
+  margin-left: 30px;
+}
+
+.circle.filled {
+  background-color: #000;
+}
+
+.online_pay p {
+  font-size: 20px;
+  margin-left: 45px;
+}
+
+.direct_pay p {
+  font-size: 20px;
+  margin-left: 45px;
+}
+
+.back_btn {
+  width: 203px;
+  height: 82px;
+  border: 1px solid #8d8d8d;
+  background-color: #ffffff;
+  border-radius: 20px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.commit_btn {
+  width: 322px;
+  height: 82px;
+  border: 0;
+  border-radius: 20px;
+  background-color: #d9d9d9;
+  font-size: 25px;
+  font-weight: bold;
+  margin-left: 33px;
+  cursor: pointer;
+}
+
+.back_btn:hover {
+  background-color: #8d8d8d;
+  color: #ffffff;
+}
+
+.commit_btn:hover {
+  background-color: #918e8e;
+  color: #ffffff;
+}

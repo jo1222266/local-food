@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="add_class.css">
+    <link rel="stylesheet" href="header.css">
+
+    <script src="JS/add_class.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="JS/calender.js"></script>
+   
+</head>
+<body>
+    <header>
+        <nav> 
+            <div class="header">
+                <div class="logo">
+                    <img src="img/Logo.png" alt="" width="130px" height="130px">
+                </div>
+                <div class="menus">
+                    <ul>
+                        <li><span><a href="#">농산물</a></span></li>
+                        <li><span><a href="#">클래스</a></span></li>
+                        <li><span><a href="#">레시피</a></span></li>
+                        <li><span><a href="#">AI</a></span></li>
+                        <li><a href="login.html"><button id="menu_btn">로그인</button></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container">
+
+        <section>
+            <p id="title">클래스 등록</p>
+
+            <form method="post">
+                <div class="section_1">
+                    <div class="section_1_img">
+                        <img src="img/d-img.png" alt="요리사진" width="230px" height="230px">
+                    </div>
+                    <div style="padding: 30px;">
+                        <p class="section_1_p">원데이 클래스 제목</p>
+                        <input class="input_box_1" type="text" name="title">
+                        <div style="height: 15px;"></div>
+                        <p class="section_1_p">클래스 정보</p>
+                        <input class="input_box_3" type="text" name="" placeholder="인원">
+                        <input class="input_box_4" type="text" name="" placeholder="소요시간">
+                        <select class="select_option" name="difficulty" style="margin-left: 15px;">
+                            <option style="display: none;">난이도</option>
+                            <option value="easy">쉬움</option>
+                            <option value="medium">보통</option>
+                            <option value="hard">어려움</option>
+                        </select>
+                        <div style="height: 40px;"></div>
+                        <p class="section_1_p">카테고리</p>
+                        <select class="select_option" name="local">
+                            <option style="display: none;">지역</option>
+                            <option value="gyeonggi">경기도</option>
+                            <option value="gyeongnam">경상남도</option>
+                            <option value="gyeongbuk">경상북도</option>
+                            <option value="jeonnam">전라남도</option>
+                            <option value="jeonbuk">전라북도</option>
+                            <option value="chungnam">충청남도</option>
+                            <option value="chungbuk">충청북도</option>
+                            <option value="gangwon">강원도</option>  
+                        </select> 
+                        <select class="select_option" name="difficulty" style="margin-left: 15px;">
+                            <option style="display: none;">음식종류</option>
+                            <option value="korean">한식</option>
+                            <option value="western">양식</option>
+                            <option value="chinese">중식</option>
+                            <option value="japanese">일식</option>
+                            <option value="dessert">디저트</option>
+                        </select>
+                        
+
+                        <div style="height: 40px;"></div>
+                        <p class="section_1_p">카톡 오픈챗팅 주소</p>
+                        <input class="input_box_1" type="text" name="title" placeholder="링크를 써주세요.">
+                        <div style="height: 35px;"></div>
+
+                        
+                        <p class="section_1_p">가격</p>
+                        <div style="display: flex; margin-top: 10px;">
+                        <input class="input_box_price" type="number" name="price">
+                        <div style="height: 35px;"></div>
+                        
+
+
+                        <button class="select-date-button schedule" type="button"><img src="img/calender.png" alt="" width="20px" height="20px"> 일정 선택하기</button>
+                        <div class="calendar schedule"></div>
+                        
+                        </div>
+
+
+                        <div style="height: 35px;"></div>
+
+                        <p class="section_1_p">클래스 주소</p>
+                        <div style="height: 10px;"></div>
+                        <input class="input_box_1" type="text" name="title" placeholder="클래스 주소를 써주세요">
+                        <div></div>
+                        <input class="input_box_1" type="text" name="title" placeholder="상세위치">
+                    </div>
+                </div>
+
+                <div class="section_2">
+                    <div class="ingre_title">
+                        <p style="font-size: 20px; font-weight: bold;">클래스 정보</p>
+                    </div>
+                    <div class="text_sec">
+                        <textarea name="" id="" class="text_sec_box"></textarea>
+                    </div>
+                    <div style="height:40px"></div>
+                </div>
+
+                <div class="section_3">
+                    <div class="cook_sec_head">
+                        <p style="font-size: 20px; font-weight: bold;">커리큘럼</p>
+                        <button id="cooking_add_btn" onclick="addCookingStep()" type="button">+ 순서추가</button>
+                    </div>
+                    <div class="cook_sec_body">
+                        <div class="row">
+                            <div class="step_sec">
+                                <p class="step">step1</p>
+                                <div style="padding: 5px;"></div>
+                            </div>
+                            <div class="step_detail">
+                                <input type="text" class="step_input">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="section_4">
+                    <div class="cook_sec_head">
+                        <p style="font-size: 20px; font-weight: bold;">예상 결과물</p>
+                    </div>
+                    <div class="pic_sec">
+                        <img src="img/burger.png" alt="" width="207px" height="220px" class="finished_pic">
+                        <img src="img/food-img.png" alt="" width="207px" height="220px" class="finished_pic">
+                        <img src="img/porridge.png" alt="" width="207px" height="220px" class="finished_pic">
+                    </div>
+                </div>
+
+                <div class="section_5">
+                    <div class="cook_sec_head">
+                        <p style="font-size: 20px; font-weight: bold;">마감일 선택</p>
+                    </div>
+                    <div class="due_day_sec">
+                        <div class="reserve_sec">
+                            <label>예약</label>
+                            <input type="date">
+                            <p>까지</p>
+                            
+                     
+                        </div>
+
+                        <div class="cancel_sec">
+                            <label>취소</label>
+                            <input type="date">
+                            <p>까지</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="buttons">
+                    <button class="save_btn">저장하기</button>
+                    <a href="Recipe.html"><button class="cancel_btn" type="button">취소하기</button></a>
+                </div>
+
+
+                <div style="height: 200px;"></div>
+            </form>
+        </section>
+    </div>
+</body>
+</html>

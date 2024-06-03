@@ -138,19 +138,67 @@
 
   .navbar2 {
     width: 165px; 
-    height: 95px; 
+    height: 50px; 
+    background-color: #f5f5f5; 
+    margin-left: 145px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    padding-top: 10px;
+    
+  }
+
+  .navbar_head {
+  width: 165px; 
+  height: 20px; 
+  background-color: #f5f5f5; 
+  margin-left: 145px;
+  padding: 20px;
+  }
+
+  .navbar_head_select {
+     width: 165px; 
+     height: 20px; 
+     background-color: #d9d9d9; 
+     margin-left: 145px;
+     padding: 20px;
+  }
+
+  .navbar_head_select p {
+    font-size: 18px;
+    font-weight: bold;
+ }
+
+  .navbar_head p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .navbar3 {
+    width: 165px; 
+    height: 65px; 
+    background-color: #f5f5f5; 
+    margin-left: 145px;
+    padding: 0 20px 20px 20px;
+  }
+
+  
+  .navbar4 {
+    width: 165px; 
+    height: 20px; 
     background-color: #f5f5f5; 
     margin-left: 145px;
     padding: 20px;
   }
 
-  .navbar3 {
+  .navbar5 {
     width: 165px; 
-    height: 60px; 
+    height: 30px; 
     background-color: #f5f5f5; 
     margin-left: 145px;
-    padding: 20px;
+    padding: 0 20px 20px 20px;
   }
+
 
 
   .navbar2 p {
@@ -162,7 +210,17 @@
     font-size: 18px;
     font-weight: bold;
   }
-  
+
+  .navbar4 p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  .navbar5 p {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
   .s_top_nav {
     width: 330px;
     height: 50px;
@@ -195,7 +253,7 @@
   }
 
   .recipes {
-    margin-top: 100px;
+    margin-top: 30px;
     height: 2200px;
   }
 
@@ -226,7 +284,10 @@
   font-size: 20px;
 }
 
-
+.tags {
+  display: flex;
+  padding: 20px;
+}
 
 .tag {
   width: 85px;
@@ -236,8 +297,7 @@
 }
 
 .tag_sec {
- display: flex;
- justify-content: flex-end;
+  padding-left: 30px;
 }
 
 .tag a {

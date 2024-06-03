@@ -1,0 +1,240 @@
+.container {
+    width: 1310px;
+    margin: 0 auto;
+    margin-top: 100px;
+}
+
+.class_title {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.category-head {
+    display: flex;
+    align-items: center;
+    width: 1310px;
+    height: 54px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    background-color: #d9d9d9;
+    margin-top: 87px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.category-head p {
+    margin-left: 35px;
+}
+
+.category-body {
+    width: 1310px;
+    height: 240px;
+}
+
+.row {
+    display: flex;
+    width: 1310px;
+    height: 80px;
+    border-bottom: 2px solid #c9c9c9;
+}
+
+.left_1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 80px;
+    border-right: 2px solid #c9c9c9 ;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.left_2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 80px;
+    border-right: 2px solid #c9c9c9 ;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.left_3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 155px;
+    height: 80px;
+    border-right: 2px solid #c9c9c9 ;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.right_1 {
+    display: flex;
+    align-items: center;
+    width: 1155px;
+    height: 80px;
+}
+
+.right_2 {
+    display: flex;
+    align-items: center;
+    width: 1155px;
+    height: 80px;
+    
+}
+
+.right_3 {
+    display: flex;
+    align-items: center;
+    width: 1155px;
+    height: 80px;
+}
+
+.button_all {
+    border: 0;
+    background-color: #ffffff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.button_dif {
+    border: 0;
+    background-color: #ffffff;
+    font-size: 18px;
+    margin-left: 60px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.search_input {
+    width: 355px;
+    height: 40px;
+}
+
+.search_btn {
+    width: 105px;
+    height: 40px;
+    border: 0;
+    color: #868686;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.clear_btn {
+    width: 105px;
+    height: 40px;
+    border: 0.5px solid #c9c9c9;
+    background-color: #ffffff;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 25px;
+}
+
+.select_sec {
+    margin-top: 100px;
+}
+
+.select_option {
+    width: 150px;
+    height: 50px;
+    font-size: 16px;
+}
+
+.profile_pic{
+    width: 44px; /* 원의 지름을 결정합니다 */
+  height: 44px; /* 원의 지름을 결정합니다 */
+  border-radius: 50%; /* 50%로 설정하여 동그란 모양이 되도록 합니다 */
+
+  overflow: hidden; /* 내부 이미지를 원 모양에 맞추기 위해 필요합니다 */
+  }
+
+  .profile_pic img {
+    width: 100%; /* 부모 요소의 너비에 맞추어 이미지 크기를 조정합니다 */
+  height: auto; /* 이미지 비율 유지 */
+  }
+
+  .profile_sec {
+    display: flex; 
+    align-items: center;
+    justify-content: space-between;
+    width: 284px;
+    margin-top: 10px;
+  }
+
+  .foot_sec {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 284px;
+    margin-top: 29px;
+    padding-bottom: 10px;
+  }
+
+  .progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #8dea76;
+  }
+
+  .progress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #8dea76;
+  }
+
+  .deadline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ffa700;
+  }
+
+  .end {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 72px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: #ff3f3f;
+    color: #ffffff;
+  }
+
+  .page_btn {
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    margin-left: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #9b9b9b;
+    font-size: 20px;
+  }
+
+    .selected {
+        width: 80px;
+        height: 40px;
+        border-radius: 50px;
+        background-color: #88ab8e; /* 원하는 색상으로 변경하세요 */
+        
+    }
+

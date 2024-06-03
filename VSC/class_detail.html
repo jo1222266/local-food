@@ -3,78 +3,286 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
-    <link rel="stylesheet" href="header.css">
+    <title>편한한끼</title>
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
     <link rel="stylesheet" href="class_detail.css">
+    <link rel="stylesheet" href="header.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="JS/calender.js"></script>
+    <script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=93bd4f68f87bfa85959b4c5bcce95813&libraries=services"></script>
+    <script src="JS/map.js"></script>
+
+    
 </head>
 <body>
     <header>
         <nav> 
-      <div class="header">
+       <div class="header">
         <div class="logo">
             <img src="img/Logo.png" alt="" width="130px" height="130px">
         </div>
         <div class="menus">
             <ul>
-               <li><span><a href="#">농산물</a></span></li>
-               <li><span><a href="#">클래스</a></span></li>
-               <li><span><a href="#">레시피</a></span></li>
-               <li><span><a href="#">AI</a></span></li>
-               <li><button id="menu_btn">로그인</button> </li>      
+               <li><span><a href="#" class="menu_a">농산물</a></span></li>
+               <li><span><a href="#" class="menu_a">클래스</a></span></li>
+               <li><span><a href="#" class="menu_a">레시피</a></span></li>
+               <li><span><a href="#" class="menu_a">AI</a></span></li>
+               <li><a href="login.html"><button id="menu_btn">로그인</button></a></li>
+      
             </ul>
+    
         </div>
-      </nav>
+       </div>
+         </nav>
+
     </header>
+    
+    <div class="container">
+      <section>
+        <div class="body">
+        <img src="img/Class-img.png" alt="" width="450px" height="450px">
 
-    <div>
-        <div class="square"></div>
-    </div>
+        <div class="class_info_sec">
+            <div style="padding: 10px;">
+            <div class="tags">
+                <div class="tag1">서울</div>
+                <div class="tag2">원데이</div>
+                <div class="tag3">양식</div>
+                <div class="tag4">진행중</div>
+            </div>
 
-    <div id="margin">
-        <div id="tag">원데이</div>
-        <div id="tag1">서울</div>
-        <div id="tag2">양식</div>
-        <div id="title">이탈리아 파스타 만들기 체험</div>
-        <div id="time">소요시간 | 2시간</div>
-        <div id="people">수강인원  | 1~5명</div>
-        <div id="level">난이도  | 쉬움</div>
-        <div id="stars">
-            <div>평점</div>
-            
-            <form name="myform" id="myform">
-                <div id="star1">★</div>
-                <div id="star1">★</div>
-                <div id="star1">★</div>
-                <div id="star1">★</div>
-                <div id="star1">★</div>
-            </form>		
-            
+            <div class="class_title">
+                <p>이탈리아 파스타 만들기 체험</p>
+            </div>
+
+            <div class="class_info">
+
+                <div class="row">
+                   <div class="label_div">소요시간</div> <p>2시간</p>
+                </div>
+
+                <div class="row" >
+                   <div class="label_div">수강인원</div> <p>1~5명</p>
+                </div>
+
+                <div class="row">
+                   <div class="label_div">난이도</div>  <p>쉬움</p>
+                </div>
+
+            </div>
+
+             <div class="grade_sec">
+
+                   <!-- <div style="display: flex;">
+                    <p>평점</p>
+                      <div class="stars">
+                        <div id="star1">★</div>
+                        <div id="star2">★</div>
+                        <div id="star2">★</div>
+                        <div id="star2">★</div>
+                        <div id="star2">★</div>	
+                      </div>
+                    <p style="margin-left: 5px;">(15)</p>
+                   </div> -->
+
+                   <div style="display: flex; align-items: center; margin-top: 10px;">
+                    <p>조회수</p>
+                    <p style="margin-left: 10px;">45회</p>
+                    <p style="font-size: 25px; font-weight: bold; margin-left: 480px;">34,000원</p>
+                   </div>
+                </div>
+            </div>
+
+            <div class="profile_sec">
+                <div class="profile_pic">
+                    <img src="img/racoon.png" alt="">
+                </div>
+
+                <div class="nickname">
+                    Robert Fox
+                </div>
+                
+                <div class="message_img">
+                  <img src="img/Messages.png" alt="">
+                </div>
+
+                <a href=""><p style="color: #2457c5; font-size: 17px; font-weight: bold; margin-left: 5px;">오픈챗팅</p></a>
+            </div>
+
+            <div class="btn_sec">
+                <button class="select-date-button schedule" type="button"><img src="img/calender.png" alt="" width="20px" height="20px"> 일정 선택하기</button>
+                <div class="calendar schedule"></div>
+
+                <div class="people_btn">인원을 선택해주세요</div>
+
+                <a href="class_reserve.html"><div class="reserve_btn">예약하기</div></a>
+            </div>
         </div>
-    </div>
-    </div>
 
-    <div>
-        <table class="table1">
-            <thead>
-                <td>클래스 정보</td>
-                <td>리뷰</td>
-                <td>문의</td>
-            </thead>
-        </table>
-    </div>
+       
+        
+      </div>
+    </section>
+      
+      <section>
 
-    <div>
-        <div>
-            <p>Total 30건</p>
-            <table class="table2">
-                <thead>
-                    <th>번호</th>
-                    <th>제목</th>
-                    <th>작성자</th>
-                    <th>작성일</th>
-                </thead>
-            </table>
+      <div class="class_detail">
+        <div class="detail_title">
+            <p>클래스정보</p>
         </div>
-    </div>
+        <hr class="custom-hr">
+      </div>
+
+      <div class="detail">
+        <p>
+            클래스 소개 <br>
+            # 두가지만 휘낭시에 체헝클래스!  <br>
+            플레인&크럼블흑임자 두가지맛 휘낭시에 만들기! <br><br>
+
+            ✿휘낭시에란? <br>
+            프랑스에서는 새해가되면 증권거래소 근처에서는 <br>
+            딜러들끼리 서로 선물을 나누어주는 풍습이 있었다고 합니다.<br>
+            그런데 증권거래소 근처의 제빵사가 선물로 줄 수 있는 제품을 고안하다 <br>
+            '영원한 것 그리고 경제적인 가치가 있는 것- 금괴'의 모양을 한 과자를 만들게 되었고그 제품이 휘낭시에가 되었습니다.<br>
+            'Financier'라는 이름은 프랑스어의 '금융가'라는 형용사로부터 만들어졌으며 <br>
+            현재 새해가 되면 덕담을 나누며 재물운을 바라는 뜻에서 <br>
+            서로에게 휘낭시에를 선물한다고 합니다.휘낭시에는 버터의 풍미가 가득하며, <br>
+            숙성될수록 더욱 맛이 깊어져요. <br><br>
+            
+            한번도 안먹은 사람은 있어도 한번만 먹은 사람은 없다는 <br>
+            아~주 맛있는 디저트랍니다! <br><br>
+            
+            직접 만들어 먹어도 좋지만 유래만큼 평소 고마우신 분이나 부모님 간식 선물용으로도 추천해요 <br><br>
+            
+            두가지맛휘낭시에를 각각 12개씩 총 24개 만들어 가져가실거예요^^ <br><br>
+            
+            ✿신청 전 확인해주세요 : <br>
+            *베이킹 체험 클래스이며, 레시피는 요청시 제공**재료계량되어있음*소요시간 1시간*주차불가, 근처유료주차자이용*수업1일전이나 당일 변경 취소불가*수업신청전 반드시 날짜와 인원수 문의해주세요.*수업 15분이상 지각시 만드는 과정이 일부 생략될수있음.
+            *오픈챗팅 가능 시간 - 평일,토요일 09:00~12:00 / 19:00~21:00
+            
+        </p>
+      </div>
+
+    </section>
+
+      <section>
+       <div class="curri_sec">
+            <div class="curri_title">
+              <p>커리큘럼</p>
+           </div>
+
+           <div class="curri_detail_sec">
+               <div style="display: flex; align-items: flex-end;">
+                <div class="number">
+                    1
+                </div>
+                <div class="curri_val_first">
+                    재료준비 및 설명
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: flex-end;">
+                <div class="number">
+                    2
+                </div>
+                <div class="curri_val">
+                    반죽
+                </div>
+              </div>
+
+              <div style="display: flex; align-items: flex-end;">
+                <div class="number">
+                    3
+                </div>
+                <div class="curri_val">
+                    포장
+                </div>
+              </div>
+
+           </div>
+      </div>
+    </section>
+
+      <section>
+
+      <div class="class_detail">
+        <div class="detail_title">
+            <p>예약 및 취소</p>
+        </div>
+        <hr class="custom-hr-1">
+      </div>
+
+      
+       <div class="reserve_cancel_sec">
+            <img src="img/Done.png" alt="">
+
+            <p>예약</p>
+
+            <p>2024.05.16. 15:30까지</p>
+       </div>
+
+       <div class="reserve_cancel_sec">
+        <img src="img/Close.png" alt="">
+
+        <p>취소</p>
+            
+        <p>2024.05.14. 15:30까지</p>
+        </div>
+
+     </section>
+
+     <section>
+        
+      <div class="class_detail">
+        <div class="detail_title">
+            <p>예상 결과물</p>
+        </div>
+        <hr class="custom-hr-2">
+      </div>
+
+      <div class="images">
+         <img src="img/burger.png" alt=""  width="290px" height="290px">
+         <img src="img/porridge.png" alt="" class="img" width="290px" height="290px">
+         <img src="img/food-img.png" alt="" class="img" width="290px" height="290px">
+      </div>
+
+     </section>
+
+     <section>
+        <div class="class_detail">
+            <div class="detail_title">
+                <p>장소</p>
+            </div>
+            <hr class="custom-hr-3">
+
+	
+        </div>
+
+        <div style="margin-top: 75px; margin-left: 100px; display: flex;">
+          <div id="map" style="width:450px;height:450px;"></div>
+
+          <div class="info">
+            <img src="img/marker.png" alt="" width="23px" height="30px">
+            <p style="margin-left: 20px; font-size: 20px;">대전 동구 우암로 352-21 나래관 4층</p>
+
+          </div>
+        </div>
+
+     </section>
+
+
+      <div style="height: 300px;"></div>
+
+     </div>
+
+
+     
+
+
 </body>
+    
 </html>

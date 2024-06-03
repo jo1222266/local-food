@@ -4,179 +4,206 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-
-    <style>
-       * {
-         margin: 0px;
-         padding: 0px;
-         list-style-type: none;
-         
-       } 
-
-       a {
-        text-decoration: none;
-       }
-
-       .header {
-         display: flex;
-         justify-content: space-between;
-         align-items: center;
-         width: 100vw;
-         height: 80px;
-         
-       
-       }
-
-       .logo {
-          padding-left: 80px;
-          font-size: 32px;
-       }
-
-       .menus {
-          padding-right: 150px;
-          font-size: 20px;
-       }
-
-       .header ul li {
-        display: inline-block;
-        padding-left: 40px;
-        text-align: center;
-        padding: 40px;
-       }
-      
-       .body {
-        width: 100vw;
-        height: 1000px;
-        background-image: url(/img/login-back-img.png);
-        background-size: cover; /* 이미지가 컨테이너에 꽉 차도록 설정 */
-        background-repeat: no-repeat; /* 이미지 반복 없음 */
-        background-attachment: fixed; /* 배경 이미지 고정 */
-        overflow-x: hidden; /* 가로 스크롤바 숨기기 */
-        
-              
-       }
-
-       
-       .login {
-        width: 600px;
-        height: 750px;
-        background-color: white;
-        text-align: center;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
-        margin-top: 100px;
-        border: 0.5px solid rgb(194, 194, 194);
-       }
-
-       .form-style {
-       width: 511px;
-       height: 65px;
-       color: black;
-       background-color:  #F5F5F5;
-       font-size: 20px;
-       line-height: 22px;
-       letter-spacing: 0.5px;
-       font-weight: 700;
-       border: solid 1px #8b8b8b;
-       border-radius: 5px;
-       text-indent: 30px;
-
-      
-}
-
-#login_btn {
-  width: 515px;
-  height: 65px;
-  font-size: 25px;
-  background-color: #7dc4f8;
-  margin-top: 30px;
-  border: 0.5px solid white;
-  color: #ffffff;
-  font-weight: bold;
-}
-
-#find_wrap {
-  display: flex;
-  margin-left: 143px;
-  margin-top: 20px;
-}
-
-#find_wrap li {
-  padding-left: 8px;
-}
-
-#menu_btn {
-  width: 168px;
-  height: 53px;
-  background-color: #8b8b8b;
-  border-radius: 20px;
-  font-size: 20px;
-  border: solid 0.1px white;
-  
-}
-
-
-
-    </style>
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/main2.css">
+    <script src="http://code.jquery.com/jquery-latest.js"></script>
 </head>
 <body>
-<div id="warp">
-  <header>
-    <nav> 
-  <div class="header">
-    <div class="logo">
-        <h1>LOGO</h1>
-    </div>
-    <div class="menus">
-        <ul>
-           <li><span><a href="#">농산물</a></span></li>
-           <li><span>클래스</span></li>
-           <li><span>레시피</span></li>
-           <li><span>AI</span></li>
-           <li><button id="menu_btn">로그인</button> </li>
-  
-        </ul>
-
-    </div>
-  </nav>
-</header>
-
- </div>
     
-    <div class="body">
-         
-      <section>
-      <div class="login">
-            
-             <h2 style="font-size: 38px; margin-top: 30px;">로그인</h2>
-             <p style="margin-top: 50px; font-weight: bold;">ooo를 찾아주셔서 감사합니다</p>
-             <p style="margin-top: 30px;">로그인을 하시면 더욱 다양한 서비스를 이용할 수 있습니다.</p>
-             <form method="post">
-
-             <div style="height: 30px;"></div>
-             <input type="text" class="form-style" placeholder="아이디"><br>
-             
-             <div style="height: 30px;"></div>
-             <input type="password" class="form-style" placeholder="비밀번호"><br>
-            
-             <div style="height: 30px;"></div>
-             <input type="checkbox" > <span style="color :#969696" >아이디 저장</span><br>
-            </form>
-             <button id="login_btn">로그인</button>
-             <div>
-             <ul id="find_wrap">
-             <li><span>아이디 찾기 |</span></li>
-             <li><span>비밀번호 찾기 |</span></li>
-             <li><span>회원가입</span></li>
-            </ul>
+    <!--slider 모션-->
+    <div class="content">
+    <!--bar-->
+        <header>
+            <nav> 
+                <div class="header">
+                    <div class="logo"> 
+                        <img src="images/Logo.png" alt="" width="130px" height="130px">
+                    </div>
+                    <div class="menus">
+                        <ul>
+                            <li><span><a href="#">농산물</a></span></li>
+                            <li><span><a href="#">클래스</a></span></li>
+                            <li><span><a href="#">레시피</a></span></li>
+                            <li><span><a href="#">AI</a></span></li>
+                            <li><button id="menu_btn">로그인</button> </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </header>
+        <div class="main-slider">
+            <div class="sliders">
+                <img src="images/sliderss1.png" alt="">
+                <img src="images/sliderss2.png" alt="">
+                <img src="images/sliderss3.png" alt="">
             </div>
-      </div>
-    </section>
-
+        </div>
     </div>
-      
-  </div>
+
+    <!--1-layout-->
+    <div class="content">
+        <div class="recom">
+            <div class="font">
+                <h2>추천 레시피</h2>
+                <p>인기 많은 추천 레시피를 쉽게 따라 만들어보세요</p>
+            </div>
+            <div class="img2-container">
+                <div class="imgTextContainer">
+                    <div class="img"><a href="#"><img src="images/box1.png"></a></div>
+                    <div class="txt">
+                        <h1>떡볶이</h1>
+                        <p>15~20분</p>
+                        <p>단계:쉬움</p>
+                    </div>
+                </div>
+                
+                <div class="imgTextContainer">
+                    <div class="img"><a href="#"><img src="images/box2.png"></a></div>
+                    <div class="txt">
+                        <h1>떡볶이</h1>
+                        <p>15~20분</p>
+                        <p>단계:쉬움</p>
+                    </div>
+                </div>
+                
+                <div class="imgTextContainer">
+                    <div class="img"><a href="#"><img src="images/box3.png"></a></div>
+                    <div class="txt">
+                        <h1>떡볶이</h1>
+                        <p>15~20분</p>
+                        <p>단계:쉬움</p>
+                    </div>
+                </div>
+                
+                <div class="imgTextContainer">
+                    <div class="img"><a href="#"><img src="images/box4.png"></a></div>
+                    <div class="txt">
+                        <h1>떡볶이</h1>
+                        <p>15~20분</p>
+                        <p>단계:쉬움</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--2-layout-->
+    <div class="content">
+        <div class="big-box">
+            <div class="font">
+                <h2>이달의 쉐프</h2>
+                <p>이달의 3명의 쉐프 레시피가 궁금하시지 않으신가요?</p>
+            </div>
+
+            <div class="rank-contain">
+                <div class="profile-container">
+                        <div class="rank-img">
+                            <img src="images/rank1.png">
+                        </div>
+                        <div class="profile-img">
+                            <a href="#"><img src="images/profile-img1.png"></a>
+                        </div>
+                        <h1 class="profileName">요리조리</h1>
+                        <p>
+                            한식 레시피 전문가
+                        </p>
+                </div>
+                <div class="profile-container">
+                        <div class="rank-img">
+                            <img src="images/rank2.png">
+                        </div>
+                        <div class="profile-img">
+                            <a href="#"><img src="images/profile-img2.png"></a>
+                        </div>
+                        <h1 class="profileName">요리조리</h1>
+                        <p>
+                            한식 레시피 전문가
+                        </p>
+                </div>
+                <div class="profile-container">
+                        <div class="rank-img">
+                            <img src="images/rank3.png">
+                        </div>
+                        <div class="profile-img">
+                            <a href="#"><img src="images/profile-img3.png"></a>
+                        </div>
+                        <h1 class="profileName">요리조리</h1>
+                        <p>
+                            한식 레시피 전문가
+                        </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--3-layout-->
+    <div class="content">
+        <div class="section4">
+            <div class="center4">
+                
+                <div class="oneday-container">
+                    <div class="ondayIntro-container">
+    
+                        <div class="title4">
+                            <h1>원데이 클래스</h1>
+                        </div>
+    
+                        <div class="onedayIntro1">
+                            <p>이 원데이 클래스는 지역의 특산물을 활용하여 색다른 요리를 경험할 수 있는 기회를 제공합니다.</p>
+                            <p>초보자부터 숙련된 요리사까지 누구나 참여할 수 있으며, 함께 요리하면서 지역의 맛과 향을 즐기는 즐거운 경험을 할 수 있습니다.</p>
+                            <p>이 클래스를 통해 참가자들은 지역의 푸드 문화를 더욱 깊이 이해하고, 새로운 요리 아이디어를 얻을 수 있습니다.</p>
+                        </div>
+                        <div class="onedayIntro2">
+                            <p>수업에 참여해서 지역별 요리를 만들어보세요</p>
+                        </div>
+                        
+                        <div class="btn4">
+                            <button type="button"><a href="#">내 주변 클래스 찾기</a></button>
+                        </div>
+                    </div>
+    
+                    <div class="onedayImg-container">
+                       <img src="images/onedayclass.png">  
+                    </div>
+    
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--3-layout-->
+    <div class="content">
+        <div class="box">
+            <div class="font">
+                <h2>이달의 쉐프</h2>
+                <p>이달의 3명의 쉐프 레시피가 궁금하시지 않으신가요?</p>
+            </div>
+        </div>
+        <!--무한 롤링 배너 구현-->
+        <div class="rolling-wrap">
+            <div class="rolling-list">
+                <ul>
+                    <li class="image-wrap">
+                        <img src="images/exfood1.png">
+                    </li>
+                    <li class="image-wrap">
+                        <img src="images/exfood2.png">
+                    </li>
+                    <li class="image-wrap">
+                        <img src="images/exfood3.png">
+                    </li>
+                    <li class="image-wrap">
+                        <img src="images/exfood4.png">
+                    </li>
+                    <li class="image-wrap">
+                        <img src="images/exfood5.png">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
 </body>
 </html>
