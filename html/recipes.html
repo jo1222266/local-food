@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/recipes.css">
+    <link rel="stylesheet" href="css/header.css">
+</head>
+<body>
+    <script src="js/recipes.js"></script>
+    <!--bar-->
+    <header>
+        <nav> 
+      <div class="header">
+        <div class="logo"> 
+            <img src="images/Logo.png" alt="" width="130px" height="130px">
+        </div>
+        <div class="menus">
+            <ul>
+               <li><span><a href="#">농산물</a></span></li>
+               <li><span><a href="#">클래스</a></span></li>
+               <li><span><a href="#">레시피</a></span></li>
+               <li><span><a href="#">AI</a></span></li>
+               <li><button id="menu_btn">로그인</button> </li>
+      
+            </ul>
+    
+        </div>
+      </nav>
+    </header>
+
+    <!--text-->
+    <div class="sub-con-body">
+    <div class="container">
+        <div class="left-contain-sub">
+            <h4 class="frn">로컬푸드 레시피</h4>
+        </div>
+    </div>
+
+    <!--검색-->
+    <div class="data-filter">
+        <div class="data-filter-head">
+            <p>검색</p>
+        </div>
+        <div class="data-filter-body">
+            <div class="detail">
+                <div class="detail-text">
+                    지역
+                </div>
+                <div class="detail-a">
+                    <ul class="filter-option">
+                        <li>
+                            <input type="checkbox">
+                            <label class="user-btn" for="">경상남도</label>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <label class="user-btn" for="">경상북도</label>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <label class="user-btn" for="">전라남도</label>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <label class="user-btn" for="">충청남도</label>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <label class="user-btn" for="">경기도</label>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <label class="user-btn" for="">층청북도</label>
+                        </li>
+                        <li>
+                            <input type="checkbox">
+                            <label class="user-btn" for="">강원도</label>
+                        </li>
+                    </ul>
+            </div>
+
+            <div class="detail">
+                    <div class="detail-text">
+                        음식 종류
+                    </div>
+                    <div class="detail-a">
+                        <ul class="filter-option">
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">전체</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">한식</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">양식</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">중식</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">일식</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">디저트</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div class="detail-text">
+                        재료 종류
+                    </div>
+                    <div class="detail-a">
+                        <ul class="filter-option">
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">전체</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">고기</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">해산물</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">채소</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">곡물</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">면</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div class="detail-text">
+                        조리 방법
+                    </div>
+                    <div class="detail-a">
+                        <ul class="filter-option">
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">전체</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">볶음</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">조림</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">튀김</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">굽기</label>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <label class="user-btn" for="">끓이기</label>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="detail">
+                    <div class="detail-text">
+                        검색
+                    </div>
+                    <div class="detail-a">
+                        <div class="form_wrap">
+                            <div class="search_area">
+                                <input type="text" class="" placeholder="검색어를 입력하세요">
+                                <a href="#" class="btn-user-grey">검색</a>
+                                <a href="#" class="btn-user-line">초기화</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

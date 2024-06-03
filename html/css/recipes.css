@@ -1,0 +1,82 @@
+.container{
+    margin: 0 auto;
+    max-width: 1280px;
+}
+
+.left-contain-sub{
+    padding: 60px 0 20px;
+    border-bottom: 1px solid #eee;
+}
+
+
+.frn{
+    margin: 60px;
+    right: 50px;
+    font-size: 30px;
+}
+
+.data-filter .data-filter-head{
+    padding: 10px 16px;
+    background: green;
+    border-radius: 10px 10px 0 0;
+}
+
+.data-filter .data-filter-head p{
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.sub-con-body{
+    padding: 90px;
+    
+}
+
+
+.data-filter-body .detail-text{
+    align-self: stretch;
+    flex-shrink: 0;
+    width: 170px;
+    background: #eee;
+    padding: 16px 20px;
+    font-size : 20px;
+}
+
+.detail-a .filter-option{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: rgb(255, 251, 246);
+    justify-content: center;
+}
+
+.filter-option > li label {
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #e2e2e2;
+    border-radius: 10px;
+}
+
+.filter-option{
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap : 16px;
+    flex-wrap: wrap;
+}
+
+label {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+input[type="checkbox"]{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    overflow: hidden;
+}
