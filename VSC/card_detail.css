@@ -1,0 +1,154 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.visu{
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: table;
+    height: 30.9em;
+    background-image: url(../images/bg.png);
+    color: #fff;
+}
+
+.wrapper{
+    width: 1310px;
+    margin: 0 auto;
+    margin-top: 160px;
+}
+
+form{
+    display: block;
+    unicode-bidi: isolate;
+}
+
+input{
+    height: 50px;
+    margin: 0;
+    vertical-align: middle;
+    border: solid 1px #d7d7d7;
+    background-color: #fff;
+    box-sizing: border-box;
+
+}
+
+.store_search_bx{
+    background-color: #f1f1f1;
+    padding: 2em 2.5em;
+    overflow: hidden;
+    margin-top: 300px;
+}
+
+.store_search_bx .in_bx{
+    float: left;
+    width: 48%;
+    position: relative;
+}
+
+.store_search_bx .in_bx .tt{
+    position: absolute;
+    left: 0;
+    top: 55%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.store_search_bx .in_bx .search_sel{
+    margin-left: 95px;
+}
+
+.col-grid-6{
+    width: 50%;
+}
+
+.row_10{
+    margin-right: -10px;
+    margin-top: -10px;
+}
+
+.store_search_bx .in_bx select{
+    font-size: 16px;
+    font-weight: 300;
+    color: #666;
+    padding: 0 20px;
+    height: 50px;
+    background-color: #fff;
+}
+
+.sel_for{
+    width: 100%;
+}
+
+option{
+    font-weight: normal;
+    display: block;
+    min-height: 1.2em;
+    padding: 0px 2px 1px;
+    white-space: nowrap;
+}
+
+
+.store_search_bx .in_bx .search_inp{
+    position: relative;
+}
+
+.input_for{
+    width: 100%;
+}
+
+.store_search_bx .in_bx .search_inp .search_btn{
+    font-size: 0;
+    position: absolute;
+    right: 0;
+    width: 36px;
+    border: 0;
+    background: url(../images/search.png) no-repeat center;
+}
+
+.sub_tit{
+    font-size: 2.5em;
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.wrapper h3 {
+    top: 200px;
+}
+
+.wrapper .big{
+    font-size: 36px;
+}
+
+.detail_info {
+    width: 639px;
+    border-top: 1px solid #757575;
+    border-bottom: 1px solid #757575;
+    margin-left: 75px;
+    
+  
+}
+
+
+.back_btn {
+    width: 293px;
+    height: 72px;
+    background-color: #a0a0a0;
+    border: 0;
+    border-radius: 30px;
+    color: #ffffff;
+    font-size: 20px;
+    margin-top: 90px;
+
+}
+
+.back_btn:hover {
+    background-color: #ffffff;
+    color: black;
+    border: 1px solid #a0a0a0;
+}
